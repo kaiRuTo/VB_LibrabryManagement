@@ -72,11 +72,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="frmDocGiaGUI.Designer.vb">
+      <DependentUpon>frmDocGiaGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocGiaGUI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frmLoaiDocGiaGUI.Designer.vb">
+      <DependentUpon>frmLoaiDocGiaGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiDocGiaGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainQLTVGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainQLTVGUI.Designer.vb">
+      <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +108,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmDocGiaGUI.resx">
+      <DependentUpon>frmDocGiaGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiDocGiaGUI.resx">
+      <DependentUpon>frmLoaiDocGiaGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainQLTVGUI.resx">
+      <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -114,6 +135,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLTV_BUS\QLTV_BUS.vbproj">
+      <Project>{7a7e9619-7e43-4e98-86ce-e37b7f19189a}</Project>
+      <Name>QLTV_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLTV_DAL\QLTV_DAL.vbproj">
+      <Project>{2ec16fbf-6540-49af-a1b6-7751253cdfb1}</Project>
+      <Name>QLTV_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLTV_DTO\QLTV_DTO.vbproj">
+      <Project>{f8812524-77b9-4a79-b80d-d3f826b95075}</Project>
+      <Name>QLTV_DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{ac9d408a-10a6-4e83-9944-4b2864c6ba53}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

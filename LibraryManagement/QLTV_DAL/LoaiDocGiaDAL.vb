@@ -322,5 +322,33 @@ Public Class LoaiDocGiaDAL
         End Using
         Return New Result(True) ' thanh cong
     End Function
+
+    Public Function selectCount() As Integer
+        Dim query As String = String.Empty
+        query &= " SELECT COUNT([maloaidocgia]) "
+        query &= " FROM [tblLoaiDocGia] "
+
+        Dim count As Integer
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                End With
+                Try
+                    conn.Open()
+                    count = comm.ExecuteScalar()
+
+                Catch ex As Exception
+                    Console.WriteLine(ex.StackTrace)
+                    conn.Close()
+                    Return 3 ' them that bai!!!
+                End Try
+            End Using
+        End Using
+        Return count ' thanh cong
+
+    End Function
 End Class
 
