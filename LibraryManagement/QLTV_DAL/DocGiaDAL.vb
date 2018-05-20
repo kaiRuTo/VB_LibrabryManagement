@@ -197,7 +197,7 @@ Public Class DocGiaDAL
                     .Connection = conn
                     .CommandType = CommandType.Text
                     .CommandText = query
-                    .Parameters.AddWithValue("@maloaihocsinh", dg.MaLoaiDocGia)
+                    .Parameters.AddWithValue("@maloaidocgia", dg.MaLoaiDocGia)
                     .Parameters.AddWithValue("@hoten", dg.HoTen)
                     .Parameters.AddWithValue("@diachi", dg.DiaChi)
                     .Parameters.AddWithValue("@ngaysinh", dg.NgaySinh)

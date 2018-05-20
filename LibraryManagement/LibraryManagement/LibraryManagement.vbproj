@@ -91,6 +91,18 @@
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmQuanLyDocGia.Designer.vb">
+      <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyDocGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyLoaiDocGia.Designer.vb">
+      <DependentUpon>frmQuanLyLoaiDocGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyLoaiDocGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainQLTVGUI.resx">
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyDocGia.resx">
+      <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyLoaiDocGia.resx">
+      <DependentUpon>frmQuanLyLoaiDocGia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
