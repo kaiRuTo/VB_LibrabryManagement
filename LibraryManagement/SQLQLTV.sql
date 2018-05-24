@@ -56,7 +56,7 @@ CREATE TABLE [dbo].[tblLoaiDocGia](
 GO
 
 CREATE TABLE [dbo].[tblSach](
-	[masach] [int] NOT NULL,
+	[masach] [int] NOT NULL, 
 	[tensach] [nvarchar](50) NOT NULL,
 	[namxuatban] [datetime2](7) NOT NULL,
 	[ngaynhap] [datetime2](7) NOT NULL,
@@ -75,23 +75,23 @@ CREATE TABLE [dbo].[tblSach](
 GO
 
 CREATE TABLE [dbo].[tblLoaiSach](
-	[maloaidsach] [int] NOT NULL,
+	[maloaisach] [int] NOT NULL,
 	[tenloaisach] [nvarchar](50) NOT NULL,
 
  CONSTRAINT [PK_tblDLoaiSach] PRIMARY KEY CLUSTERED 
 (
-	[maloaidsach] ASC
+	[maloaisach] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
 GO
 
-CREATE TABLE [dbo].tblDocGiaSach(
-	[madocgia] [int] NOT NULL,
+CREATE TABLE [dbo].tblTacGiaSach(
+	[matacgia] [int] NOT NULL,
 	[masach] [int] NOT NULL
  CONSTRAINT [PK_tbllophocsinh] PRIMARY KEY CLUSTERED 
 (
-	[madocgia] ASC,
+	[matacgia] ASC,
 	[masach] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
@@ -150,7 +150,9 @@ CREATE TABLE [dbo].[tblMuonTraSach](
 GO
 
 CREATE TABLE [dbo].[tblThamSo](
-[tuoitoithieu] [int] NOT NULL
+[tuoitoithieu] [int] NOT NULL,
+[tuoitoida] [int] NOT NULL,
+
 )
 
 GO
@@ -172,3 +174,6 @@ VALUES(1,N'Khang Truong',1,N'KTX Khu A',N'khangtruong@gmail.com',convert(datetim
 GO
 
 select * from [tblDocGia]
+
+Go
+insert into [tblLoaiSach] VALUES(1,'A'),(2,'B'),(3,'C')

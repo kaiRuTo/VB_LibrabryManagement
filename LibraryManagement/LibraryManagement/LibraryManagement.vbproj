@@ -84,6 +84,12 @@
     <Compile Include="frmLoaiDocGiaGUI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLoaiSachGUI.Designer.vb">
+      <DependentUpon>frmLoaiSachGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiSachGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMainQLTVGUI.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,12 @@
       <DependentUpon>frmQuanLyLoaiDocGia.vb</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyLoaiDocGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyLoaiSach.Designer.vb">
+      <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyLoaiSach.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -126,6 +138,9 @@
     <EmbeddedResource Include="frmLoaiDocGiaGUI.resx">
       <DependentUpon>frmLoaiDocGiaGUI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiSachGUI.resx">
+      <DependentUpon>frmLoaiSachGUI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainQLTVGUI.resx">
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyLoaiDocGia.resx">
       <DependentUpon>frmQuanLyLoaiDocGia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyLoaiSach.resx">
+      <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -171,6 +189,25 @@
       <Project>{ac9d408a-10a6-4e83-9944-4b2864c6ba53}</Project>
       <Name>Utility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

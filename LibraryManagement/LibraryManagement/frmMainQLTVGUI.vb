@@ -23,4 +23,16 @@ Public Class frmMain
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
+    Private Sub ThêmLoạiSáchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ThêmLoạiSáchToolStripMenuItem.Click
+        Dim frm As frmLoaiSachGUI = New frmLoaiSachGUI()
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub QuảnLýLoạiSáchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuảnLýLoạiSáchToolStripMenuItem.Click
+        Dim frm As frmQuanLyLoaiSach = New frmQuanLyLoaiSach()
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmQuanLyLoaiDocGia
+Partial Class frmQuanLyLoaiSach
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,101 +29,101 @@ Partial Class frmQuanLyLoaiDocGia
         Me.txtTenLoai = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dgvDanhSachLoaiDG = New System.Windows.Forms.DataGridView()
-        CType(Me.dgvDanhSachLoaiDG, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgvDanhSachLoaiSach = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvDanhSachLoaiSach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnXoa
         '
-        Me.btnXoa.Location = New System.Drawing.Point(450, 484)
+        Me.btnXoa.Location = New System.Drawing.Point(450, 474)
         Me.btnXoa.Margin = New System.Windows.Forms.Padding(4)
         Me.btnXoa.Name = "btnXoa"
         Me.btnXoa.Size = New System.Drawing.Size(100, 28)
-        Me.btnXoa.TabIndex = 29
+        Me.btnXoa.TabIndex = 37
         Me.btnXoa.Text = "Xóa"
         Me.btnXoa.UseVisualStyleBackColor = True
         '
         'btnCapNhat
         '
-        Me.btnCapNhat.Location = New System.Drawing.Point(290, 484)
+        Me.btnCapNhat.Location = New System.Drawing.Point(290, 474)
         Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCapNhat.Name = "btnCapNhat"
         Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
-        Me.btnCapNhat.TabIndex = 28
+        Me.btnCapNhat.TabIndex = 36
         Me.btnCapNhat.Text = "Cập Nhật"
         Me.btnCapNhat.UseVisualStyleBackColor = True
         '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(290, 356)
+        Me.txtMaLoai.Location = New System.Drawing.Point(290, 346)
         Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
         Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
-        Me.txtMaLoai.TabIndex = 27
+        Me.txtMaLoai.TabIndex = 35
         Me.txtMaLoai.Text = "1"
         Me.txtMaLoai.WordWrap = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(186, 356)
+        Me.Label3.Location = New System.Drawing.Point(186, 346)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 17)
-        Me.Label3.TabIndex = 26
+        Me.Label3.TabIndex = 34
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(290, 414)
+        Me.txtTenLoai.Location = New System.Drawing.Point(290, 404)
         Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
         Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
-        Me.txtTenLoai.TabIndex = 25
+        Me.txtTenLoai.TabIndex = 33
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(186, 414)
+        Me.Label2.Location = New System.Drawing.Point(186, 404)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 17)
-        Me.Label2.TabIndex = 24
+        Me.Label2.TabIndex = 32
         Me.Label2.Text = "Tên Loại:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(135, 30)
+        Me.Label1.Location = New System.Drawing.Point(135, 20)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(166, 17)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Danh sách Loại Đọc Giả:"
+        Me.Label1.Size = New System.Drawing.Size(147, 17)
+        Me.Label1.TabIndex = 31
+        Me.Label1.Text = "Danh sách Loại Sách:"
         '
-        'dgvDanhSachLoaiDG
+        'dgvDanhSachLoaiSach
         '
-        Me.dgvDanhSachLoaiDG.AllowUserToAddRows = False
-        Me.dgvDanhSachLoaiDG.AllowUserToDeleteRows = False
-        Me.dgvDanhSachLoaiDG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvDanhSachLoaiDG.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvDanhSachLoaiDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDanhSachLoaiDG.Location = New System.Drawing.Point(139, 50)
-        Me.dgvDanhSachLoaiDG.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvDanhSachLoaiDG.MultiSelect = False
-        Me.dgvDanhSachLoaiDG.Name = "dgvDanhSachLoaiDG"
-        Me.dgvDanhSachLoaiDG.ReadOnly = True
-        Me.dgvDanhSachLoaiDG.RowHeadersVisible = False
-        Me.dgvDanhSachLoaiDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDanhSachLoaiDG.Size = New System.Drawing.Size(515, 185)
-        Me.dgvDanhSachLoaiDG.TabIndex = 22
+        Me.dgvDanhSachLoaiSach.AllowUserToAddRows = False
+        Me.dgvDanhSachLoaiSach.AllowUserToDeleteRows = False
+        Me.dgvDanhSachLoaiSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvDanhSachLoaiSach.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvDanhSachLoaiSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDanhSachLoaiSach.Location = New System.Drawing.Point(139, 40)
+        Me.dgvDanhSachLoaiSach.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvDanhSachLoaiSach.MultiSelect = False
+        Me.dgvDanhSachLoaiSach.Name = "dgvDanhSachLoaiSach"
+        Me.dgvDanhSachLoaiSach.ReadOnly = True
+        Me.dgvDanhSachLoaiSach.RowHeadersVisible = False
+        Me.dgvDanhSachLoaiSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvDanhSachLoaiSach.Size = New System.Drawing.Size(515, 185)
+        Me.dgvDanhSachLoaiSach.TabIndex = 30
         '
-        'frmQuanLyLoaiDocGia
+        'frmQuanLyLoaiSach
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(789, 542)
+        Me.ClientSize = New System.Drawing.Size(789, 522)
         Me.Controls.Add(Me.btnXoa)
         Me.Controls.Add(Me.btnCapNhat)
         Me.Controls.Add(Me.txtMaLoai)
@@ -131,10 +131,10 @@ Partial Class frmQuanLyLoaiDocGia
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.dgvDanhSachLoaiDG)
-        Me.Name = "frmQuanLyLoaiDocGia"
-        Me.Text = "frmQuanLyLoaiDocGia"
-        CType(Me.dgvDanhSachLoaiDG, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Controls.Add(Me.dgvDanhSachLoaiSach)
+        Me.Name = "frmQuanLyLoaiSach"
+        Me.Text = "frmQuanLyLoaiSach"
+        CType(Me.dgvDanhSachLoaiSach, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,5 +147,5 @@ Partial Class frmQuanLyLoaiDocGia
     Friend WithEvents txtTenLoai As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents dgvDanhSachLoaiDG As DataGridView
+    Friend WithEvents dgvDanhSachLoaiSach As DataGridView
 End Class
