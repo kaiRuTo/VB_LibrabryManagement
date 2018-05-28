@@ -40,7 +40,7 @@ Public Class frmDocGiaGUI
         docgia = New DocGiaDTO()
 
         '1. Mapping data from GUI control
-        docgia.MaDocGia = Convert.ToInt32(txtMaSo.Text)
+        docgia.MaDocGia = txtMaSo.Text
         docgia.HoTen = txtHoTen.Text
         docgia.DiaChi = txtDiaChi.Text
         docgia.NgaySinh = dtpNgaySinh.Value

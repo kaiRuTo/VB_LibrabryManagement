@@ -259,10 +259,10 @@ Partial Class frmQuanLyDocGia
         '
         'btnThem
         '
-        Me.btnThem.Location = New System.Drawing.Point(951, 63)
+        Me.btnThem.Location = New System.Drawing.Point(951, 60)
         Me.btnThem.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThem.Name = "btnThem"
-        Me.btnThem.Size = New System.Drawing.Size(121, 28)
+        Me.btnThem.Size = New System.Drawing.Size(121, 31)
         Me.btnThem.TabIndex = 38
         Me.btnThem.Text = "Thêm đọc giả"
         Me.btnThem.UseVisualStyleBackColor = True

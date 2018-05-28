@@ -118,7 +118,7 @@ Public Class frmQuanLyLoaiDocGia
 
                         '1. Delete from DB
                         Dim result As Result
-                        result = ldgBUS.delete(Convert.ToInt32(txtMaLoai.Text))
+                        result = ldgBUS.delete(txtMaLoai.Text)
                         If (result.FlagResult = True) Then
 
                             ' Re-Load LoaiHocSinh list

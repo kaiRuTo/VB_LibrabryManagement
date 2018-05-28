@@ -33,11 +33,11 @@ Public Class LoaiDocGiaBUS
     Public Function count() As Integer
         Return ldgDAL.selectCount()
     End Function
-    Public Function insert(lhs As LoaiDocGiaDTO) As Result
+    Public Function insert(ldg As LoaiDocGiaDTO) As Result
         '1. verify data here!!
 
         '2. insert to DB
-        Return ldgDAL.insert(lhs)
+        Return ldgDAL.insert(ldg)
     End Function
     Public Function update(lhs As LoaiDocGiaDTO) As Result
         '1. verify data here!!
@@ -45,7 +45,7 @@ Public Class LoaiDocGiaBUS
         '2. insert to DB
         Return ldgDAL.update(lhs)
     End Function
-    Public Function delete(maLoai As Integer) As Result
+    Public Function delete(maLoai As String) As Result
         '1. verify data here!!
 
         '2. insert to DB

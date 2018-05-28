@@ -1,5 +1,5 @@
 ﻿Public Class DocGiaDTO
-    Private iMaDocGia As Integer
+    Private strMaDocGia As String
     Private strHoTen As String
     Private iMaLoaiDocGia As Integer
     Private strDiaChi As String
@@ -9,8 +9,8 @@
     Public Sub New()
     End Sub
 
-    Public Sub New(iMaDocGia As Integer, strHoTen As String, iMaLoaiDocGia As Integer, strDiaChi As String, strEmail As String, dateNgaySinh As Date, dateNgayLapThe As Date)
-        Me.iMaDocGia = iMaDocGia
+    Public Sub New(iMaDocGia As String, strHoTen As String, iMaLoaiDocGia As Integer, strDiaChi As String, strEmail As String, dateNgaySinh As Date, dateNgayLapThe As Date)
+        Me.strMaDocGia = iMaDocGia
         Me.strHoTen = strHoTen
         Me.iMaLoaiDocGia = iMaLoaiDocGia
         Me.strDiaChi = strDiaChi
@@ -19,12 +19,12 @@
         Me.dateNgayLapThe = dateNgayLapThe
     End Sub
 
-    Public Property MaDocGia As Integer
+    Public Property MaDocGia As String
         Get
-            Return iMaDocGia
+            Return strMaDocGia
         End Get
-        Set(value As Integer)
-            iMaDocGia = value
+        Set(value As String)
+            strMaDocGia = value
         End Set
     End Property
 

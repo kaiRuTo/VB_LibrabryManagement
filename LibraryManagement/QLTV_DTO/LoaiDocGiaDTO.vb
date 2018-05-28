@@ -1,20 +1,20 @@
 ﻿Public Class LoaiDocGiaDTO
-    Private iMaLoaiDocGia As Integer
+    Private srtMaLoaiDocGia As String
     Private strTenLoaiDocGia As String
     Public Sub New()
     End Sub
 
     Public Sub New(iMaLoaiDocGia As Integer, strTenLoaiDocGia As String)
-        Me.iMaLoaiDocGia = iMaLoaiDocGia
+        Me.srtMaLoaiDocGia = iMaLoaiDocGia
         Me.strTenLoaiDocGia = strTenLoaiDocGia
     End Sub
 
-    Public Property MaLoaiDocGia As Integer
+    Public Property MaLoaiDocGia As String
         Get
-            Return iMaLoaiDocGia
+            Return srtMaLoaiDocGia
         End Get
-        Set(value As Integer)
-            iMaLoaiDocGia = value
+        Set(value As String)
+            srtMaLoaiDocGia = value
         End Set
     End Property
 

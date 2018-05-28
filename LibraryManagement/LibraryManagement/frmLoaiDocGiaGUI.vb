@@ -23,7 +23,7 @@ Public Class frmLoaiDocGiaGUI
         ldg = New LoaiDocGiaDTO()
 
         '1. Mapping data from GUI control
-        ldg.MaLoaiDocGia = Convert.ToInt32(txtMaLoai.Text)
+        ldg.MaLoaiDocGia = txtMaLoai.Text
         ldg.TenLoaiDocGia = txtTenLoai.Text
 
         '2. Business .....

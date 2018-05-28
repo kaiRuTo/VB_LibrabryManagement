@@ -294,7 +294,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return 0 ' thanh cong
     End Function
-    Public Function delete(maLoai As Integer) As Result
+    Public Function delete(maLoai As String) As Result
 
         Dim query As String = String.Empty
         query &= " DELETE FROM [tblLoaiDocGia]  "
