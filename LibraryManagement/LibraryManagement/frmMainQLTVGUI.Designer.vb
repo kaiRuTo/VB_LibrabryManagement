@@ -24,10 +24,8 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ThêmĐọcGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuảnLýĐọcGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ThêmLoạiĐọcGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuảnLyLoạiĐọcGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.HệThốngSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,16 +46,10 @@ Partial Class frmMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThêmĐọcGiảToolStripMenuItem, Me.QuảnLýĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem1, Me.ThêmLoạiĐọcGiảToolStripMenuItem, Me.QuảnLyLoạiĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem2})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuảnLýĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem1, Me.QuảnLyLoạiĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem2})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(137, 24)
         Me.FileToolStripMenuItem.Text = "Hệ thống đọc giả"
-        '
-        'ThêmĐọcGiảToolStripMenuItem
-        '
-        Me.ThêmĐọcGiảToolStripMenuItem.Name = "ThêmĐọcGiảToolStripMenuItem"
-        Me.ThêmĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
-        Me.ThêmĐọcGiảToolStripMenuItem.Text = "Thêm loại đọc giả"
         '
         'QuảnLýĐọcGiảToolStripMenuItem
         '
@@ -69,12 +61,6 @@ Partial Class frmMain
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(214, 6)
-        '
-        'ThêmLoạiĐọcGiảToolStripMenuItem
-        '
-        Me.ThêmLoạiĐọcGiảToolStripMenuItem.Name = "ThêmLoạiĐọcGiảToolStripMenuItem"
-        Me.ThêmLoạiĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
-        Me.ThêmLoạiĐọcGiảToolStripMenuItem.Text = "Thêm  đọc giả"
         '
         'QuảnLyLoạiĐọcGiảToolStripMenuItem
         '
@@ -97,7 +83,7 @@ Partial Class frmMain
         'ThêmLoạiSáchToolStripMenuItem
         '
         Me.ThêmLoạiSáchToolStripMenuItem.Name = "ThêmLoạiSáchToolStripMenuItem"
-        Me.ThêmLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(188, 26)
+        Me.ThêmLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.ThêmLoạiSáchToolStripMenuItem.Text = "Thêm Loại Sách"
         '
         'QuảnLýLoạiSáchToolStripMenuItem
@@ -126,10 +112,8 @@ Partial Class frmMain
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ThêmĐọcGiảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuảnLýĐọcGiảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
-    Friend WithEvents ThêmLoạiĐọcGiảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuảnLyLoạiĐọcGiảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
     Friend WithEvents HệThốngSáchToolStripMenuItem As ToolStripMenuItem

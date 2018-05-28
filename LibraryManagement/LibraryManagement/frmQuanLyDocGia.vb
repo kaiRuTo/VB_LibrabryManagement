@@ -25,6 +25,7 @@ Public Class frmQuanLyDocGia
         cbLoaiDGCapNhat.DataSource = New BindingSource(listLoaiDocGia, String.Empty)
         cbLoaiDGCapNhat.DisplayMember = "TenLoaiDocGia"
         cbLoaiDGCapNhat.ValueMember = "MaLoaiDocGia"
+        loadListDocGia()
     End Sub
 
     Private Sub loadListDocGia()
@@ -36,7 +37,7 @@ Public Class frmQuanLyDocGia
             System.Console.WriteLine(result.SystemMessage)
             Return
         End If
-
+        cbLoaiDG.SelectedIndex = -1
         'dgvListdg.SuspendLayout()
         dgvListDG.Columns.Clear()
         dgvListDG.DataSource = Nothing
@@ -271,5 +272,15 @@ Public Class frmQuanLyDocGia
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+        Dim frmdg As frmDocGiaGUI = New frmDocGiaGUI()
+        frmdg.MdiParent = frmMain
+        frmdg.Show()
+    End Sub
+
+    Private Sub btnTaiLai_Click(sender As Object, e As EventArgs) Handles btnTaiLai.Click
+        loadListDocGia()
     End Sub
 End Class

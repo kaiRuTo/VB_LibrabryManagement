@@ -146,6 +146,13 @@ Public Class frmQuanLyLoaiDocGia
         End If
     End Sub
 
+    Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+        Dim frm As frmLoaiDocGiaGUI = New frmLoaiDocGiaGUI()
+        frm.MdiParent = frmMain
+        frm.Show()
+    End Sub
 
-
+    Private Sub btnTaiLai_Click(sender As Object, e As EventArgs) Handles btnTaiLai.Click
+        loadlistLoaiDocGia()
+    End Sub
 End Class

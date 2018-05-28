@@ -32,7 +32,7 @@ Partial Class frmLoaiDocGiaGUI
         '
         'btnNhapVanDong
         '
-        Me.btnNhapVanDong.Location = New System.Drawing.Point(410, 179)
+        Me.btnNhapVanDong.Location = New System.Drawing.Point(182, 182)
         Me.btnNhapVanDong.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNhapVanDong.Name = "btnNhapVanDong"
         Me.btnNhapVanDong.Size = New System.Drawing.Size(129, 28)
@@ -42,7 +42,7 @@ Partial Class frmLoaiDocGiaGUI
         '
         'btnNhap
         '
-        Me.btnNhap.Location = New System.Drawing.Point(261, 179)
+        Me.btnNhap.Location = New System.Drawing.Point(33, 182)
         Me.btnNhap.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNhap.Name = "btnNhap"
         Me.btnNhap.Size = New System.Drawing.Size(100, 28)
@@ -52,7 +52,7 @@ Partial Class frmLoaiDocGiaGUI
         '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(261, 45)
+        Me.txtMaLoai.Location = New System.Drawing.Point(135, 43)
         Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
@@ -63,7 +63,7 @@ Partial Class frmLoaiDocGiaGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(151, 54)
+        Me.Label3.Location = New System.Drawing.Point(25, 52)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 17)
@@ -72,16 +72,16 @@ Partial Class frmLoaiDocGiaGUI
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(261, 103)
+        Me.txtTenLoai.Location = New System.Drawing.Point(135, 101)
         Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
-        Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
+        Me.txtTenLoai.Size = New System.Drawing.Size(176, 22)
         Me.txtTenLoai.TabIndex = 18
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(151, 112)
+        Me.Label1.Location = New System.Drawing.Point(25, 110)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 17)
@@ -92,14 +92,16 @@ Partial Class frmLoaiDocGiaGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(706, 253)
+        Me.ClientSize = New System.Drawing.Size(354, 253)
         Me.Controls.Add(Me.btnNhapVanDong)
         Me.Controls.Add(Me.btnNhap)
         Me.Controls.Add(Me.txtMaLoai)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmLoaiDocGiaGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmLoaiDocGiaGUI"
         Me.ResumeLayout(False)
         Me.PerformLayout()

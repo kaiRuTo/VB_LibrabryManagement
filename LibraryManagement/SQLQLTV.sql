@@ -43,6 +43,18 @@ CREATE TABLE [dbo].[tblDocGia](
 
 GO
 
+CREATE TABLE [dbo].[tblNhanVien](
+	[manhanvien] [int] NOT NULL,
+	[tennhanvien] [nvarchar](50) NOT NULL,
+
+ CONSTRAINT [PK_tblNhanVien] PRIMARY KEY CLUSTERED 
+(
+	[manhanvien] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
 CREATE TABLE [dbo].[tblLoaiDocGia](
 	[maloaidocgia] [int] NOT NULL,
 	[tenloaidocgia] [nvarchar](50) NOT NULL,
@@ -62,7 +74,6 @@ CREATE TABLE [dbo].[tblSach](
 	[ngaynhap] [datetime2](7) NOT NULL,
 	[maloaisach] [int] NOT NULL,
 	[manhaxuatban] [int] NOT NULL,
-	[matacgia] [int] NOT NULL,
 	[matinhtrang] [int] NOT NULL,
 	[trigia] [int] NOT NULL,
 
@@ -78,7 +89,7 @@ CREATE TABLE [dbo].[tblLoaiSach](
 	[maloaisach] [int] NOT NULL,
 	[tenloaisach] [nvarchar](50) NOT NULL,
 
- CONSTRAINT [PK_tblDLoaiSach] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_tblLoaiSach] PRIMARY KEY CLUSTERED 
 (
 	[maloaisach] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -86,10 +97,10 @@ CREATE TABLE [dbo].[tblLoaiSach](
 
 GO
 
-CREATE TABLE [dbo].tblTacGiaSach(
+CREATE TABLE [dbo].[tblTacGiaSach](
 	[matacgia] [int] NOT NULL,
 	[masach] [int] NOT NULL
- CONSTRAINT [PK_tbllophocsinh] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_tblTacGiaSach] PRIMARY KEY CLUSTERED 
 (
 	[matacgia] ASC,
 	[masach] ASC
@@ -124,7 +135,7 @@ GO
 
 CREATE TABLE [dbo].[tblTinhTrang](
 	[matinhtrang] [int] NOT NULL,
-	[tenltinhtrang] [nvarchar](50) NOT NULL,
+	[tentinhtrang] [nvarchar](50) NOT NULL,
 
  CONSTRAINT [PK_tblTinhTrang] PRIMARY KEY CLUSTERED 
 (
@@ -177,3 +188,6 @@ select * from [tblDocGia]
 
 Go
 insert into [tblLoaiSach] VALUES(1,'A'),(2,'B'),(3,'C')
+
+Go
+

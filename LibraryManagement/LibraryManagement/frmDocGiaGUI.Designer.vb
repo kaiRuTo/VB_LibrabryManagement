@@ -42,7 +42,7 @@ Partial Class frmDocGiaGUI
         '
         'btnNhapVaDong
         '
-        Me.btnNhapVaDong.Location = New System.Drawing.Point(503, 490)
+        Me.btnNhapVaDong.Location = New System.Drawing.Point(237, 474)
         Me.btnNhapVaDong.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNhapVaDong.Name = "btnNhapVaDong"
         Me.btnNhapVaDong.Size = New System.Drawing.Size(149, 28)
@@ -52,7 +52,7 @@ Partial Class frmDocGiaGUI
         '
         'btnNhap
         '
-        Me.btnNhap.Location = New System.Drawing.Point(357, 490)
+        Me.btnNhap.Location = New System.Drawing.Point(91, 474)
         Me.btnNhap.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNhap.Name = "btnNhap"
         Me.btnNhap.Size = New System.Drawing.Size(100, 28)
@@ -63,7 +63,7 @@ Partial Class frmDocGiaGUI
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(247, 442)
+        Me.Label5.Location = New System.Drawing.Point(16, 403)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 17)
@@ -73,16 +73,16 @@ Partial Class frmDocGiaGUI
         'cbLoaiDG
         '
         Me.cbLoaiDG.FormattingEnabled = True
-        Me.cbLoaiDG.Location = New System.Drawing.Point(357, 432)
+        Me.cbLoaiDG.Location = New System.Drawing.Point(123, 396)
         Me.cbLoaiDG.Margin = New System.Windows.Forms.Padding(4)
         Me.cbLoaiDG.Name = "cbLoaiDG"
-        Me.cbLoaiDG.Size = New System.Drawing.Size(233, 24)
+        Me.cbLoaiDG.Size = New System.Drawing.Size(215, 24)
         Me.cbLoaiDG.TabIndex = 20
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(250, 311)
+        Me.Label4.Location = New System.Drawing.Point(16, 306)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(77, 17)
@@ -92,7 +92,7 @@ Partial Class frmDocGiaGUI
         'dtpNgaySinh
         '
         Me.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpNgaySinh.Location = New System.Drawing.Point(357, 311)
+        Me.dtpNgaySinh.Location = New System.Drawing.Point(123, 306)
         Me.dtpNgaySinh.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgaySinh.Name = "dtpNgaySinh"
         Me.dtpNgaySinh.Size = New System.Drawing.Size(265, 22)
@@ -101,7 +101,7 @@ Partial Class frmDocGiaGUI
         '
         'txtMaSo
         '
-        Me.txtMaSo.Location = New System.Drawing.Point(357, 117)
+        Me.txtMaSo.Location = New System.Drawing.Point(123, 42)
         Me.txtMaSo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaSo.Name = "txtMaSo"
         Me.txtMaSo.ReadOnly = True
@@ -111,7 +111,7 @@ Partial Class frmDocGiaGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(247, 125)
+        Me.Label3.Location = New System.Drawing.Point(13, 50)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 17)
@@ -120,16 +120,17 @@ Partial Class frmDocGiaGUI
         '
         'txtDiaChi
         '
-        Me.txtDiaChi.Location = New System.Drawing.Point(357, 221)
+        Me.txtDiaChi.Location = New System.Drawing.Point(123, 146)
         Me.txtDiaChi.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiaChi.Multiline = True
         Me.txtDiaChi.Name = "txtDiaChi"
-        Me.txtDiaChi.Size = New System.Drawing.Size(295, 22)
+        Me.txtDiaChi.Size = New System.Drawing.Size(265, 79)
         Me.txtDiaChi.TabIndex = 15
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(247, 230)
+        Me.Label2.Location = New System.Drawing.Point(13, 155)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 17)
@@ -138,16 +139,16 @@ Partial Class frmDocGiaGUI
         '
         'txtHoTen
         '
-        Me.txtHoTen.Location = New System.Drawing.Point(357, 174)
+        Me.txtHoTen.Location = New System.Drawing.Point(123, 99)
         Me.txtHoTen.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHoTen.Name = "txtHoTen"
-        Me.txtHoTen.Size = New System.Drawing.Size(295, 22)
+        Me.txtHoTen.Size = New System.Drawing.Size(215, 22)
         Me.txtHoTen.TabIndex = 13
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(247, 183)
+        Me.Label1.Location = New System.Drawing.Point(13, 108)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 17)
@@ -158,7 +159,7 @@ Partial Class frmDocGiaGUI
         '
         Me.dtpNgayLapThe.Enabled = False
         Me.dtpNgayLapThe.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpNgayLapThe.Location = New System.Drawing.Point(357, 355)
+        Me.dtpNgayLapThe.Location = New System.Drawing.Point(123, 350)
         Me.dtpNgayLapThe.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayLapThe.Name = "dtpNgayLapThe"
         Me.dtpNgayLapThe.Size = New System.Drawing.Size(265, 22)
@@ -168,7 +169,7 @@ Partial Class frmDocGiaGUI
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(250, 355)
+        Me.Label6.Location = New System.Drawing.Point(16, 350)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(73, 17)
@@ -178,7 +179,7 @@ Partial Class frmDocGiaGUI
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(247, 271)
+        Me.Label7.Location = New System.Drawing.Point(13, 266)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(46, 17)
@@ -187,17 +188,17 @@ Partial Class frmDocGiaGUI
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(357, 262)
+        Me.txtEmail.Location = New System.Drawing.Point(123, 257)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(295, 22)
+        Me.txtEmail.Size = New System.Drawing.Size(265, 22)
         Me.txtEmail.TabIndex = 15
         '
         'frmDocGiaGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(936, 564)
+        Me.ClientSize = New System.Drawing.Size(436, 564)
         Me.Controls.Add(Me.btnNhapVaDong)
         Me.Controls.Add(Me.btnNhap)
         Me.Controls.Add(Me.Label5)
@@ -214,7 +215,9 @@ Partial Class frmDocGiaGUI
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtHoTen)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmDocGiaGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nhập Đọc Giả"
         Me.ResumeLayout(False)
         Me.PerformLayout()
