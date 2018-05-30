@@ -115,6 +115,18 @@
     <Compile Include="frmQuanLyLoaiSach.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmQuanLySachGUI.Designer.vb">
+      <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLySachGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSachGUI.Designer.vb">
+      <DependentUpon>frmSachGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSachGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -152,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyLoaiSach.resx">
       <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLySachGUI.resx">
+      <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSachGUI.resx">
+      <DependentUpon>frmSachGUI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
