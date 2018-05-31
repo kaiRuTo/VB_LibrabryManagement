@@ -97,6 +97,12 @@
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNhaXuatBan.Designer.vb">
+      <DependentUpon>frmNhaXuatBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaXuatBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQuanLyDocGia.Designer.vb">
       <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
     </Compile>
@@ -113,6 +119,18 @@
       <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyLoaiSach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuyDinh.Designer.vb">
+      <DependentUpon>frmQuyDinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuyDinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTacGia.Designer.vb">
+      <DependentUpon>frmTacGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTacGia.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -144,6 +162,9 @@
     <EmbeddedResource Include="frmMainQLTVGUI.resx">
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaXuatBan.resx">
+      <DependentUpon>frmNhaXuatBan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyDocGia.resx">
       <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyLoaiSach.resx">
       <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuyDinh.resx">
+      <DependentUpon>frmQuyDinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTacGia.resx">
+      <DependentUpon>frmTacGia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

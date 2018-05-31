@@ -31,16 +31,21 @@ Partial Class frmMain
         Me.HệThốngSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThêmLoạiSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuảnLýLoạiSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuyĐịnhToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HệThốngTácGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ThêmTácGỉaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ThêmNXBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HệThốngSáchToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HệThốngSáchToolStripMenuItem, Me.FileToolStripMenuItem1, Me.HệThốngTácGiảToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(451, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -92,11 +97,43 @@ Partial Class frmMain
         Me.QuảnLýLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.QuảnLýLoạiSáchToolStripMenuItem.Text = "Quản lý loại sách"
         '
+        'FileToolStripMenuItem1
+        '
+        Me.FileToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuyĐịnhToolStripMenuItem})
+        Me.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1"
+        Me.FileToolStripMenuItem1.Size = New System.Drawing.Size(44, 24)
+        Me.FileToolStripMenuItem1.Text = "File"
+        '
+        'QuyĐịnhToolStripMenuItem
+        '
+        Me.QuyĐịnhToolStripMenuItem.Name = "QuyĐịnhToolStripMenuItem"
+        Me.QuyĐịnhToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.QuyĐịnhToolStripMenuItem.Text = "Quy Định"
+        '
+        'HệThốngTácGiảToolStripMenuItem
+        '
+        Me.HệThốngTácGiảToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThêmTácGỉaToolStripMenuItem, Me.ThêmNXBToolStripMenuItem})
+        Me.HệThốngTácGiảToolStripMenuItem.Name = "HệThốngTácGiảToolStripMenuItem"
+        Me.HệThốngTácGiảToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
+        Me.HệThốngTácGiảToolStripMenuItem.Text = "Hệ thống tác giả"
+        '
+        'ThêmTácGỉaToolStripMenuItem
+        '
+        Me.ThêmTácGỉaToolStripMenuItem.Name = "ThêmTácGỉaToolStripMenuItem"
+        Me.ThêmTácGỉaToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ThêmTácGỉaToolStripMenuItem.Text = "Thêm Tác Gỉa"
+        '
+        'ThêmNXBToolStripMenuItem
+        '
+        Me.ThêmNXBToolStripMenuItem.Name = "ThêmNXBToolStripMenuItem"
+        Me.ThêmNXBToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ThêmNXBToolStripMenuItem.Text = "Thêm NXB"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 253)
+        Me.ClientSize = New System.Drawing.Size(451, 253)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -119,4 +156,9 @@ Partial Class frmMain
     Friend WithEvents HệThốngSáchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ThêmLoạiSáchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuảnLýLoạiSáchToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FileToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents QuyĐịnhToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HệThốngTácGiảToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ThêmTácGỉaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ThêmNXBToolStripMenuItem As ToolStripMenuItem
 End Class
