@@ -83,6 +83,7 @@
     </Compile>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="NhaXuatBanBUS.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhBUS.vb" />
@@ -94,6 +95,8 @@
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+=======
+>>>>>>> parent of 342025a... them tg,nxb
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

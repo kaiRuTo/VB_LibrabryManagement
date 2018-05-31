@@ -83,6 +83,7 @@
     </Compile>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="NhaXuatBanDTO.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhDTO.vb" />
@@ -92,6 +93,8 @@
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+=======
+>>>>>>> parent of 342025a... them tg,nxb
     <Compile Include="SachDTO.vb" />
   </ItemGroup>
   <ItemGroup>
