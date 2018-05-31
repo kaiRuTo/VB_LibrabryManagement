@@ -81,13 +81,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="NhaXuatBanDTO.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhDTO.vb" />
 =======
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <Compile Include="SachDTO.vb" />
-    <Compile Include="TacGiaDTO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

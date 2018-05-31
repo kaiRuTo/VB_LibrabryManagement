@@ -81,6 +81,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="NhaXuatBanBUS.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhBUS.vb" />
@@ -88,6 +89,8 @@
     <Compile Include="SachBUS.vb" />
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     <Compile Include="TacGiaBUS.vb" />
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -122,6 +122,7 @@
       <SubType>Form</SubType>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -146,6 +147,8 @@
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -188,6 +191,7 @@
       <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +205,8 @@
       <DependentUpon>frmSachGUI.vb</DependentUpon>
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     </EmbeddedResource>
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
