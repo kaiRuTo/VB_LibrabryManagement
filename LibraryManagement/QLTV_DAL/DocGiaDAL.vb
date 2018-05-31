@@ -12,6 +12,7 @@ Public Class DocGiaDAL
     Public Sub New(ConnectionString As String)
         Me.connectionString = ConnectionString
     End Sub
+
     Public Function buildMSDG(ByRef nextMsdg As String) As Result 'ex: 18222229
 
         nextMsdg = String.Empty
@@ -42,24 +43,27 @@ Public Class DocGiaDAL
                             msOnDB = reader("madocgia")
                         End While
                     End If
-                    If (msOnDB <> Nothing And msOnDB.Length >= 8) Then
-                        Dim currentYear = DateTime.Now.Year.ToString().Substring(2)
-                        Dim iCurrentYear = Integer.Parse(currentYear)
-                        Dim currentYearOnDB = msOnDB.Substring(0, 2)
-                        Dim icurrentYearOnDB = Integer.Parse(currentYearOnDB)
-                        Dim year = iCurrentYear
-                        If (year < icurrentYearOnDB) Then
-                            year = icurrentYearOnDB
+                    If (msOnDB <> Nothing) Then
+                        If (msOnDB.Length >= 8) Then
+                            Dim currentYear = DateTime.Now.Year.ToString().Substring(2)
+                            Dim iCurrentYear = Integer.Parse(currentYear)
+                            Dim currentYearOnDB = msOnDB.Substring(0, 2)
+                            Dim icurrentYearOnDB = Integer.Parse(currentYearOnDB)
+                            Dim year = iCurrentYear
+                            If (year < icurrentYearOnDB) Then
+                                year = icurrentYearOnDB
+                            End If
+                            nextMsdg = year.ToString()
+                            Dim v = msOnDB.Substring(2)
+                            Dim convertDecimal = Convert.ToDecimal(v)
+                            convertDecimal = convertDecimal + 1
+                            Dim tmp = convertDecimal.ToString()
+                            tmp = tmp.PadLeft(msOnDB.Length - 2, "0")
+                            nextMsdg = nextMsdg + tmp
+                            System.Console.WriteLine(nextMsdg)
                         End If
-                        nextMsdg = year.ToString()
-                        Dim v = msOnDB.Substring(2)
-                        Dim convertDecimal = Convert.ToDecimal(v)
-                        convertDecimal = convertDecimal + 1
-                        Dim tmp = convertDecimal.ToString()
-                        tmp = tmp.PadLeft(msOnDB.Length - 2, "0")
-                        nextMsdg = nextMsdg + tmp
-                        System.Console.WriteLine(nextMsdg)
                     End If
+
 
                 Catch ex As Exception
                     conn.Close() ' that bai!!!

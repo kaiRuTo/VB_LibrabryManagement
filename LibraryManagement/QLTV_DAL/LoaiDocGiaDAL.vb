@@ -49,6 +49,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return id ' thanh cong
     End Function
+
     Public Function getNextID(ByRef nextID As Integer) As Result
 
         Dim query As String = String.Empty
@@ -73,9 +74,14 @@ Public Class LoaiDocGiaDAL
                         While reader.Read()
                             idOnDB = reader("maloaidocgia")
                         End While
+                        nextID = idOnDB + 1
+                    Else
+                        nextID = 1
                     End If
+
                     ' new ID = current ID + 1
-                    nextID = idOnDB + 1
+                    ' nextID = idOnDB + 1
+
                 Catch ex As Exception
                     conn.Close()
                     ' them that bai!!!
@@ -86,6 +92,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return New Result(True) ' thanh cong
     End Function
+
     Public Function insert_LoaiDocGia(ldg As LoaiDocGiaDTO) As Integer
         Dim query As String = String.Empty
         query &= "INSERT INTO [tblLoaiDocGia] ([maloaidocgia], [tenloaidocgia])"
@@ -112,6 +119,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return 0 ' thanh cong
     End Function
+
     Public Function insert(ldg As LoaiDocGiaDTO) As Result
 
         Dim query As String = String.Empty
@@ -169,6 +177,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return 0 ' thanh cong
     End Function
+
     Public Function update(ldg As LoaiDocGiaDTO) As Result
 
         Dim query As String = String.Empty
@@ -199,6 +208,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return New Result(True) ' thanh cong
     End Function
+
     Public Function selectALL_LoaiDocGia() As List(Of LoaiDocGiaDTO)
 
         Dim listLoaiDocGia = New List(Of LoaiDocGiaDTO)
@@ -232,6 +242,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return listLoaiDocGia ' thanh cong
     End Function
+
     Public Function selectALL(ByRef listLoaiDocGia As List(Of LoaiDocGiaDTO)) As Result
 
         Dim query As String = String.Empty
@@ -260,7 +271,7 @@ Public Class LoaiDocGiaDAL
                     Console.WriteLine(ex.StackTrace)
                     conn.Close()
                     ' them that bai!!!
-                    Return New Result(False, "Lấy tất cả loại đọc giả không thành công", ex.StackTrace)
+                    Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
                 End Try
             End Using
         End Using
@@ -294,6 +305,7 @@ Public Class LoaiDocGiaDAL
         End Using
         Return 0 ' thanh cong
     End Function
+
     Public Function delete(maLoai As String) As Result
 
         Dim query As String = String.Empty

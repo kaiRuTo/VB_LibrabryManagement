@@ -31,93 +31,20 @@ Partial Class frmMain
         Me.HệThốngSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThêmLoạiSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuảnLýLoạiSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
->>>>>>> 342025a... them tg,nxb
-        Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuyĐịnhToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HệThốngTácGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ThêmTácGỉaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ThêmNXBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-<<<<<<< HEAD
 =======
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuanLySachToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
-<<<<<<< HEAD
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
->>>>>>> 342025a... them tg,nxb
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HệThốngSáchToolStripMenuItem, Me.FileToolStripMenuItem1, Me.HệThốngTácGiảToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HệThốngSáchToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-        Me.MenuStrip1.Size = New System.Drawing.Size(451, 28)
-=======
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(359, 24)
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
-<<<<<<< HEAD
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(451, 28)
->>>>>>> 342025a... them tg,nxb
-=======
-        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -125,97 +52,50 @@ Partial Class frmMain
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuảnLýĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem1, Me.QuảnLyLoạiĐọcGiảToolStripMenuItem, Me.ToolStripMenuItem2})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(137, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(111, 20)
         Me.FileToolStripMenuItem.Text = "Hệ thống đọc giả"
         '
         'QuảnLýĐọcGiảToolStripMenuItem
         '
         Me.QuảnLýĐọcGiảToolStripMenuItem.Name = "QuảnLýĐọcGiảToolStripMenuItem"
-        Me.QuảnLýĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.QuảnLýĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.QuảnLýĐọcGiảToolStripMenuItem.Text = "Quản lý loại đọc giả"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(214, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(176, 6)
         '
         'QuảnLyLoạiĐọcGiảToolStripMenuItem
         '
         Me.QuảnLyLoạiĐọcGiảToolStripMenuItem.Name = "QuảnLyLoạiĐọcGiảToolStripMenuItem"
-        Me.QuảnLyLoạiĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.QuảnLyLoạiĐọcGiảToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.QuảnLyLoạiĐọcGiảToolStripMenuItem.Text = "Quản ly đọc giả"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(214, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(176, 6)
         '
         'HệThốngSáchToolStripMenuItem
         '
-        Me.HệThốngSáchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThêmLoạiSáchToolStripMenuItem, Me.QuảnLýLoạiSáchToolStripMenuItem})
+        Me.HệThốngSáchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThêmLoạiSáchToolStripMenuItem, Me.QuảnLýLoạiSáchToolStripMenuItem, Me.ToolStripSeparator1, Me.QuanLySachToolStripMenuItem})
         Me.HệThốngSáchToolStripMenuItem.Name = "HệThốngSáchToolStripMenuItem"
-        Me.HệThốngSáchToolStripMenuItem.Size = New System.Drawing.Size(118, 24)
+        Me.HệThốngSáchToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
         Me.HệThốngSáchToolStripMenuItem.Text = "Hệ thống Sách"
         '
         'ThêmLoạiSáchToolStripMenuItem
         '
         Me.ThêmLoạiSáchToolStripMenuItem.Name = "ThêmLoạiSáchToolStripMenuItem"
-        Me.ThêmLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.ThêmLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.ThêmLoạiSáchToolStripMenuItem.Text = "Thêm Loại Sách"
         '
         'QuảnLýLoạiSáchToolStripMenuItem
         '
         Me.QuảnLýLoạiSáchToolStripMenuItem.Name = "QuảnLýLoạiSáchToolStripMenuItem"
-        Me.QuảnLýLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.QuảnLýLoạiSáchToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.QuảnLýLoạiSáchToolStripMenuItem.Text = "Quản lý loại sách"
         '
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
->>>>>>> 342025a... them tg,nxb
-        'FileToolStripMenuItem1
-        '
-        Me.FileToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuyĐịnhToolStripMenuItem})
-        Me.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1"
-        Me.FileToolStripMenuItem1.Size = New System.Drawing.Size(44, 24)
-        Me.FileToolStripMenuItem1.Text = "File"
-        '
-        'QuyĐịnhToolStripMenuItem
-        '
-        Me.QuyĐịnhToolStripMenuItem.Name = "QuyĐịnhToolStripMenuItem"
-        Me.QuyĐịnhToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.QuyĐịnhToolStripMenuItem.Text = "Quy Định"
-        '
-        'HệThốngTácGiảToolStripMenuItem
-        '
-        Me.HệThốngTácGiảToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThêmTácGỉaToolStripMenuItem, Me.ThêmNXBToolStripMenuItem})
-        Me.HệThốngTácGiảToolStripMenuItem.Name = "HệThốngTácGiảToolStripMenuItem"
-        Me.HệThốngTácGiảToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
-        Me.HệThốngTácGiảToolStripMenuItem.Text = "Hệ thống tác giả"
-        '
-        'ThêmTácGỉaToolStripMenuItem
-        '
-        Me.ThêmTácGỉaToolStripMenuItem.Name = "ThêmTácGỉaToolStripMenuItem"
-        Me.ThêmTácGỉaToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.ThêmTácGỉaToolStripMenuItem.Text = "Thêm Tác Gỉa"
-        '
-        'ThêmNXBToolStripMenuItem
-        '
-        Me.ThêmNXBToolStripMenuItem.Name = "ThêmNXBToolStripMenuItem"
-        Me.ThêmNXBToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.ThêmNXBToolStripMenuItem.Text = "Thêm NXB"
-<<<<<<< HEAD
-=======
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -226,69 +106,16 @@ Partial Class frmMain
         Me.QuanLySachToolStripMenuItem.Name = "QuanLySachToolStripMenuItem"
         Me.QuanLySachToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.QuanLySachToolStripMenuItem.Text = "Quản lý sách"
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         '
-<<<<<<< HEAD
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
-        '
->>>>>>> 342025a... them tg,nxb
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-        Me.ClientSize = New System.Drawing.Size(451, 253)
-=======
         Me.ClientSize = New System.Drawing.Size(359, 217)
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
-<<<<<<< HEAD
-=======
-        Me.ClientSize = New System.Drawing.Size(282, 253)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
-        Me.ClientSize = New System.Drawing.Size(282, 253)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
-        Me.ClientSize = New System.Drawing.Size(282, 253)
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
-        Me.ClientSize = New System.Drawing.Size(451, 253)
->>>>>>> 342025a... them tg,nxb
-=======
-        Me.ClientSize = New System.Drawing.Size(282, 253)
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
         Me.Text = "Quản Lý Thư Viện"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -308,44 +135,6 @@ Partial Class frmMain
     Friend WithEvents HệThốngSáchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ThêmLoạiSáchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuảnLýLoạiSáchToolStripMenuItem As ToolStripMenuItem
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
->>>>>>> 342025a... them tg,nxb
-    Friend WithEvents FileToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents QuyĐịnhToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HệThốngTácGiảToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ThêmTácGỉaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ThêmNXBToolStripMenuItem As ToolStripMenuItem
-<<<<<<< HEAD
-=======
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents QuanLySachToolStripMenuItem As ToolStripMenuItem
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
-<<<<<<< HEAD
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
->>>>>>> 342025a... them tg,nxb
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 End Class

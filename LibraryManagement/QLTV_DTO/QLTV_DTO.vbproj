@@ -81,41 +81,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <Compile Include="NhaXuatBanDTO.vb" />
-<<<<<<< HEAD
-    <Compile Include="QuyDinhDTO.vb" />
-=======
->>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
-<<<<<<< HEAD
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
-<<<<<<< HEAD
-=======
->>>>>>> parent of 342025a... them tg,nxb
-=======
->>>>>>> parent of 98da15f... again
-=======
->>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
-=======
-    <Compile Include="NhaXuatBanDTO.vb" />
-    <Compile Include="QuyDinhDTO.vb" />
->>>>>>> 342025a... them tg,nxb
-=======
->>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <Compile Include="SachDTO.vb" />
+    <Compile Include="TacGiaDTO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
