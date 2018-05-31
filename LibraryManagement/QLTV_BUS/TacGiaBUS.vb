@@ -2,6 +2,9 @@
 Imports QLTV_DTO
 Imports Utility
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
 Public Class TacGiaBUS
     Private tgDAL As TacGiaDAL
     Public Sub New()
@@ -61,6 +64,7 @@ Public Class TacGiaBUS
     Public Function getNextID(ByRef nextID As Integer) As Result
         Return tgDAL.getNextID(nextID)
     End Function
+<<<<<<< HEAD
 =======
 
 Public Class TacGiaBUS
@@ -79,4 +83,6 @@ Public Class TacGiaBUS
     End Function
 
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
 End Class

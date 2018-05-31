@@ -1,5 +1,8 @@
 ﻿Public Class NhaXuatBanDTO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
     Private iMaNhaXuatBan As Integer
     Private strTenNhaXuatBan As String
 
@@ -27,6 +30,7 @@
         End Get
         Set(value As String)
             strTenNhaXuatBan = value
+<<<<<<< HEAD
 =======
     Private strMaNhaXuatBan As String
     Private strNhaXuatBan As String
@@ -52,6 +56,8 @@
         Set(value As String)
             strNhaXuatBan = value
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
         End Set
     End Property
 End Class

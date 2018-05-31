@@ -87,6 +87,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
@@ -110,6 +111,11 @@
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+    <Compile Include="NhaXuatBanDAL.vb" />
+    <Compile Include="QuyDinhDAL.vb" />
+    <Compile Include="TacGiaDAL.vb" />
+>>>>>>> 342025a... them tg,nxb
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

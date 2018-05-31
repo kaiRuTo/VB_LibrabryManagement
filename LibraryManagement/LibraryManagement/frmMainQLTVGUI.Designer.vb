@@ -37,15 +37,19 @@ Partial Class frmMain
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
         Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuyĐịnhToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HệThốngTácGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThêmTácGỉaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThêmNXBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+<<<<<<< HEAD
 =======
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuanLySachToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -62,6 +66,8 @@ Partial Class frmMain
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,6 +77,7 @@ Partial Class frmMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HệThốngSáchToolStripMenuItem, Me.FileToolStripMenuItem1, Me.HệThốngTácGiảToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,6 +108,9 @@ Partial Class frmMain
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+        Me.MenuStrip1.Size = New System.Drawing.Size(451, 28)
+>>>>>>> 342025a... them tg,nxb
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -158,10 +168,13 @@ Partial Class frmMain
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
         'FileToolStripMenuItem1
         '
         Me.FileToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuyĐịnhToolStripMenuItem})
@@ -193,6 +206,7 @@ Partial Class frmMain
         Me.ThêmNXBToolStripMenuItem.Name = "ThêmNXBToolStripMenuItem"
         Me.ThêmNXBToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.ThêmNXBToolStripMenuItem.Text = "Thêm NXB"
+<<<<<<< HEAD
 =======
         'ToolStripSeparator1
         '
@@ -218,10 +232,14 @@ Partial Class frmMain
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+        '
+>>>>>>> 342025a... them tg,nxb
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,6 +269,9 @@ Partial Class frmMain
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+        Me.ClientSize = New System.Drawing.Size(451, 253)
+>>>>>>> 342025a... them tg,nxb
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -280,15 +301,19 @@ Partial Class frmMain
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
     Friend WithEvents FileToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents QuyĐịnhToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HệThốngTácGiảToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ThêmTácGỉaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ThêmNXBToolStripMenuItem As ToolStripMenuItem
+<<<<<<< HEAD
 =======
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents QuanLySachToolStripMenuItem As ToolStripMenuItem
@@ -305,4 +330,6 @@ Partial Class frmMain
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
 End Class

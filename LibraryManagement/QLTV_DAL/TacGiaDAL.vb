@@ -3,17 +3,24 @@ Imports System.Data.SqlClient
 Imports QLTV_DTO
 Imports Utility
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
 Public Class TacGiaDAL
     Private connectionString As String
 
     Public Sub New()
 <<<<<<< HEAD
+<<<<<<< HEAD
         ' Read ConnectionString value from App.config file
 =======
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+        ' Read ConnectionString value from App.config file
+>>>>>>> 342025a... them tg,nxb
         connectionString = ConfigurationManager.AppSettings("ConnectionString")
     End Sub
     Public Sub New(ConnectionString As String)
@@ -21,6 +28,9 @@ Public Class TacGiaDAL
     End Sub
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
     Public Function getNextID(ByRef nextID As Integer) As Result
 
         Dim query As String = String.Empty
@@ -159,9 +169,12 @@ Public Class TacGiaDAL
 
     Public Function selectALL(ByRef listtacgia As List(Of TacGiaDTO)) As Result
 
+<<<<<<< HEAD
 =======
     Public Function selectAll(ByRef listTacGia As List(Of TacGiaDTO)) As Result
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
         Dim query As String = String.Empty
         query &= " SELECT [matacgia], [tentacgia]"
         query &= " FROM [tblTacGia]"
@@ -180,6 +193,7 @@ Public Class TacGiaDAL
                     reader = comm.ExecuteReader()
                     If reader.HasRows = True Then
 <<<<<<< HEAD
+<<<<<<< HEAD
                         listtacgia.Clear()
                         While reader.Read()
                             listtacgia.Add(New TacGiaDTO(reader("matacgia"), reader("tentacgia")))
@@ -188,12 +202,20 @@ Public Class TacGiaDAL
                         While reader.Read()
                             listTacGia.Add(New TacGiaDTO(reader("matacgia"), reader("tentacgia")))
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+                        listtacgia.Clear()
+                        While reader.Read()
+                            listtacgia.Add(New TacGiaDTO(reader("matacgia"), reader("tentacgia")))
+>>>>>>> 342025a... them tg,nxb
                         End While
                     End If
                 Catch ex As Exception
                     Console.WriteLine(ex.StackTrace)
                     conn.Close()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
                     ' them that bai!!!
                     Return New Result(False, "Lấy tất cả tác giả không thành công", ex.StackTrace)
                 End Try
@@ -257,6 +279,7 @@ Public Class TacGiaDAL
         End Using
         Return count ' thanh cong
 
+<<<<<<< HEAD
 =======
 
                     Return New Result(False, "Lấy tất cả tác giả không thành công", ex.StackTrace)
@@ -265,5 +288,7 @@ Public Class TacGiaDAL
         End Using
         Return New Result(True)
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
     End Function
 End Class

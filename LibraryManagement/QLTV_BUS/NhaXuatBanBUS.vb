@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
 ﻿Imports QLTV_DAL
 Imports QLTV_DTO
 Imports Utility
@@ -61,6 +64,7 @@ Public Class NhaXuatBanBUS
     Public Function getNextID(ByRef nextID As Integer) As Result
         Return nxbDAL.getNextID(nextID)
     End Function
+<<<<<<< HEAD
 =======
 ﻿Imports QLTV_DTO
 Imports QLTV_DAL
@@ -82,4 +86,6 @@ Public Class NhaXuatBanBUS
     End Function
 
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
 End Class

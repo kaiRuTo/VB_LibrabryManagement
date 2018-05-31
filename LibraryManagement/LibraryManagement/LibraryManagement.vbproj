@@ -127,10 +127,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -141,6 +144,7 @@
       <DependentUpon>frmTacGia.vb</DependentUpon>
     </Compile>
     <Compile Include="frmTacGia.vb">
+<<<<<<< HEAD
 =======
     <Compile Include="frmQuanLySachGUI.Designer.vb">
       <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
@@ -167,6 +171,10 @@
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> 342025a... them tg,nxb
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -214,15 +222,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+>>>>>>> 342025a... them tg,nxb
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTacGia.resx">
       <DependentUpon>frmTacGia.vb</DependentUpon>
+<<<<<<< HEAD
 =======
     <EmbeddedResource Include="frmQuanLySachGUI.resx">
       <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
@@ -243,6 +255,9 @@
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+    </EmbeddedResource>
+>>>>>>> 342025a... them tg,nxb
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

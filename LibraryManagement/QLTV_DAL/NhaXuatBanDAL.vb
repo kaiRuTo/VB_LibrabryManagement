@@ -3,17 +3,24 @@ Imports System.Data.SqlClient
 Imports QLTV_DTO
 Imports Utility
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
 Public Class NhaXuatBanDAL
     Private connectionString As String
 
     Public Sub New()
 <<<<<<< HEAD
+<<<<<<< HEAD
         ' Read ConnectionString value from App.config file
 =======
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+        ' Read ConnectionString value from App.config file
+>>>>>>> 342025a... them tg,nxb
         connectionString = ConfigurationManager.AppSettings("ConnectionString")
     End Sub
     Public Sub New(ConnectionString As String)
@@ -21,6 +28,9 @@ Public Class NhaXuatBanDAL
     End Sub
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
     Public Function getNextID(ByRef nextID As Integer) As Result
 
         Dim query As String = String.Empty
@@ -159,9 +169,12 @@ Public Class NhaXuatBanDAL
 
     Public Function selectALL(ByRef listnhaxuatban As List(Of NhaXuatBanDTO)) As Result
 
+<<<<<<< HEAD
 =======
     Public Function SelectAll(listNhaXuatBan As List(Of NhaXuatBanDTO)) As Result
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
         Dim query As String = String.Empty
         query &= " SELECT [manhaxuatban], [tennhaxuatban]"
         query &= " FROM [tblNhaXuatBan]"
@@ -180,6 +193,7 @@ Public Class NhaXuatBanDAL
                     reader = comm.ExecuteReader()
                     If reader.HasRows = True Then
 <<<<<<< HEAD
+<<<<<<< HEAD
                         listnhaxuatban.Clear()
                         While reader.Read()
                             listnhaxuatban.Add(New NhaXuatBanDTO(reader("manhaxuatban"), reader("tennhaxuatban")))
@@ -188,6 +202,11 @@ Public Class NhaXuatBanDAL
                         While reader.Read()
                             listNhaXuatBan.Add(New NhaXuatBanDTO(reader("manhaxuatban"), reader("tennhaxuatban")))
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+                        listnhaxuatban.Clear()
+                        While reader.Read()
+                            listnhaxuatban.Add(New NhaXuatBanDTO(reader("manhaxuatban"), reader("tennhaxuatban")))
+>>>>>>> 342025a... them tg,nxb
                         End While
                     End If
                 Catch ex As Exception
@@ -195,16 +214,23 @@ Public Class NhaXuatBanDAL
                     conn.Close()
                     ' them that bai!!!
 <<<<<<< HEAD
+<<<<<<< HEAD
                     Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
 =======
                     Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+                    Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
+>>>>>>> 342025a... them tg,nxb
                 End Try
             End Using
         End Using
         Return New Result(True) ' thanh cong
     End Function
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
 
     Public Function delete(Manhaxuatban As Integer) As Result
 
@@ -262,6 +288,9 @@ Public Class NhaXuatBanDAL
         Return count ' thanh cong
 
     End Function
+<<<<<<< HEAD
 =======
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
 End Class

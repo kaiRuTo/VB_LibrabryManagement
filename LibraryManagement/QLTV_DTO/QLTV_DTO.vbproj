@@ -86,6 +86,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
@@ -107,6 +108,10 @@
 >>>>>>> parent of 98da15f... again
 =======
 >>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
+=======
+    <Compile Include="NhaXuatBanDTO.vb" />
+    <Compile Include="QuyDinhDTO.vb" />
+>>>>>>> 342025a... them tg,nxb
     <Compile Include="SachDTO.vb" />
     <Compile Include="TacGiaDTO.vb" />
   </ItemGroup>

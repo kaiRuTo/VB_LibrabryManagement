@@ -1,5 +1,8 @@
 ﻿Public Class TacGiaDTO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 342025a... them tg,nxb
     Private iMaTacGia As Integer
     Private strTenTacGia As String
 
@@ -21,6 +24,7 @@
     End Property
 
     Public Property TenTacGia As String
+<<<<<<< HEAD
 =======
     Private strMaTacGia As String
     Private strTenTacGia As String
@@ -42,6 +46,8 @@
 
     Public Property tenTacGia As String
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> 342025a... them tg,nxb
         Get
             Return strTenTacGia
         End Get
