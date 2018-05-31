@@ -2,17 +2,25 @@
 Imports System.Data.SqlClient
 Imports QLTV_DTO
 Imports Utility
+<<<<<<< HEAD
+=======
+
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
 Public Class NhaXuatBanDAL
     Private connectionString As String
 
     Public Sub New()
+<<<<<<< HEAD
         ' Read ConnectionString value from App.config file
+=======
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         connectionString = ConfigurationManager.AppSettings("ConnectionString")
     End Sub
     Public Sub New(ConnectionString As String)
         Me.connectionString = ConnectionString
     End Sub
 
+<<<<<<< HEAD
     Public Function getNextID(ByRef nextID As Integer) As Result
 
         Dim query As String = String.Empty
@@ -151,6 +159,9 @@ Public Class NhaXuatBanDAL
 
     Public Function selectALL(ByRef listnhaxuatban As List(Of NhaXuatBanDTO)) As Result
 
+=======
+    Public Function SelectAll(listNhaXuatBan As List(Of NhaXuatBanDTO)) As Result
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         Dim query As String = String.Empty
         query &= " SELECT [manhaxuatban], [tennhaxuatban]"
         query &= " FROM [tblNhaXuatBan]"
@@ -168,21 +179,32 @@ Public Class NhaXuatBanDAL
                     Dim reader As SqlDataReader
                     reader = comm.ExecuteReader()
                     If reader.HasRows = True Then
+<<<<<<< HEAD
                         listnhaxuatban.Clear()
                         While reader.Read()
                             listnhaxuatban.Add(New NhaXuatBanDTO(reader("manhaxuatban"), reader("tennhaxuatban")))
+=======
+                        listNhaXuatBan.Clear()
+                        While reader.Read()
+                            listNhaXuatBan.Add(New NhaXuatBanDTO(reader("manhaxuatban"), reader("tennhaxuatban")))
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
                         End While
                     End If
                 Catch ex As Exception
                     Console.WriteLine(ex.StackTrace)
                     conn.Close()
                     ' them that bai!!!
+<<<<<<< HEAD
                     Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
+=======
+                    Return New Result(False, "Lấy tất cả nhà xuất bản không thành công", ex.StackTrace)
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
                 End Try
             End Using
         End Using
         Return New Result(True) ' thanh cong
     End Function
+<<<<<<< HEAD
 
     Public Function delete(Manhaxuatban As Integer) As Result
 
@@ -240,4 +262,6 @@ Public Class NhaXuatBanDAL
         Return count ' thanh cong
 
     End Function
+=======
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
 End Class

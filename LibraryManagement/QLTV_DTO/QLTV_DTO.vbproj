@@ -82,7 +82,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NhaXuatBanDTO.vb" />
+<<<<<<< HEAD
     <Compile Include="QuyDinhDTO.vb" />
+=======
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     <Compile Include="SachDTO.vb" />
     <Compile Include="TacGiaDTO.vb" />
   </ItemGroup>

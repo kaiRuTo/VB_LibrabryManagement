@@ -83,7 +83,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NhaXuatBanDAL.vb" />
+<<<<<<< HEAD
     <Compile Include="QuyDinhDAL.vb" />
+=======
+    <Compile Include="SachDAL.vb" />
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     <Compile Include="TacGiaDAL.vb" />
   </ItemGroup>
   <ItemGroup>

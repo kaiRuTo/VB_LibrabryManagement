@@ -1,4 +1,5 @@
 ﻿Public Class TacGiaDTO
+<<<<<<< HEAD
     Private iMaTacGia As Integer
     Private strTenTacGia As String
 
@@ -20,6 +21,27 @@
     End Property
 
     Public Property TenTacGia As String
+=======
+    Private strMaTacGia As String
+    Private strTenTacGia As String
+
+    Public Sub New(strmTG As String, strtTG As String)
+        Me.strMaTacGia = strmTG
+        Me.strTenTacGia = strtTG
+    End Sub
+
+
+    Public Property maTacGia As String
+        Get
+            Return strMaTacGia
+        End Get
+        Set(value As String)
+            strMaTacGia = value
+        End Set
+    End Property
+
+    Public Property tenTacGia As String
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         Get
             Return strTenTacGia
         End Get

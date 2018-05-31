@@ -1,6 +1,7 @@
 ﻿Imports QLTV_DAL
 Imports QLTV_DTO
 Imports Utility
+<<<<<<< HEAD
 Public Class TacGiaBUS
     Private tgDAL As TacGiaDAL
     Public Sub New()
@@ -60,4 +61,22 @@ Public Class TacGiaBUS
     Public Function getNextID(ByRef nextID As Integer) As Result
         Return tgDAL.getNextID(nextID)
     End Function
+=======
+
+Public Class TacGiaBUS
+    Private tacGiaDAL As TacGiaDAL
+    Public Sub New()
+        tacGiaDAL = New TacGiaDAL()
+    End Sub
+
+    Public Sub New(connectString As String)
+        tacGiaDAL = New TacGiaDAL(connectString)
+    End Sub
+
+    Public Function selectAll(ByRef listTacGia As List(Of TacGiaDTO)) As Result
+
+        Return tacGiaDAL.selectAll(listTacGia)
+    End Function
+
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
 End Class

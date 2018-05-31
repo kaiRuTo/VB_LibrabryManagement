@@ -2,17 +2,25 @@
 Imports System.Data.SqlClient
 Imports QLTV_DTO
 Imports Utility
+<<<<<<< HEAD
+=======
+
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
 Public Class TacGiaDAL
     Private connectionString As String
 
     Public Sub New()
+<<<<<<< HEAD
         ' Read ConnectionString value from App.config file
+=======
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         connectionString = ConfigurationManager.AppSettings("ConnectionString")
     End Sub
     Public Sub New(ConnectionString As String)
         Me.connectionString = ConnectionString
     End Sub
 
+<<<<<<< HEAD
     Public Function getNextID(ByRef nextID As Integer) As Result
 
         Dim query As String = String.Empty
@@ -151,6 +159,9 @@ Public Class TacGiaDAL
 
     Public Function selectALL(ByRef listtacgia As List(Of TacGiaDTO)) As Result
 
+=======
+    Public Function selectAll(ByRef listTacGia As List(Of TacGiaDTO)) As Result
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
         Dim query As String = String.Empty
         query &= " SELECT [matacgia], [tentacgia]"
         query &= " FROM [tblTacGia]"
@@ -168,14 +179,21 @@ Public Class TacGiaDAL
                     Dim reader As SqlDataReader
                     reader = comm.ExecuteReader()
                     If reader.HasRows = True Then
+<<<<<<< HEAD
                         listtacgia.Clear()
                         While reader.Read()
                             listtacgia.Add(New TacGiaDTO(reader("matacgia"), reader("tentacgia")))
+=======
+                        listTacGia.Clear()
+                        While reader.Read()
+                            listTacGia.Add(New TacGiaDTO(reader("matacgia"), reader("tentacgia")))
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
                         End While
                     End If
                 Catch ex As Exception
                     Console.WriteLine(ex.StackTrace)
                     conn.Close()
+<<<<<<< HEAD
                     ' them that bai!!!
                     Return New Result(False, "Lấy tất cả tác giả không thành công", ex.StackTrace)
                 End Try
@@ -239,5 +257,13 @@ Public Class TacGiaDAL
         End Using
         Return count ' thanh cong
 
+=======
+
+                    Return New Result(False, "Lấy tất cả tác giả không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True)
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     End Function
 End Class

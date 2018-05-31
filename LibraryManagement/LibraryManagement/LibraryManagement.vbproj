@@ -121,6 +121,7 @@
     <Compile Include="frmQuanLyLoaiSach.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -131,6 +132,18 @@
       <DependentUpon>frmTacGia.vb</DependentUpon>
     </Compile>
     <Compile Include="frmTacGia.vb">
+=======
+    <Compile Include="frmQuanLySachGUI.Designer.vb">
+      <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLySachGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSachGUI.Designer.vb">
+      <DependentUpon>frmSachGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSachGUI.vb">
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -174,11 +187,19 @@
     <EmbeddedResource Include="frmQuanLyLoaiSach.resx">
       <DependentUpon>frmQuanLyLoaiSach.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTacGia.resx">
       <DependentUpon>frmTacGia.vb</DependentUpon>
+=======
+    <EmbeddedResource Include="frmQuanLySachGUI.resx">
+      <DependentUpon>frmQuanLySachGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSachGUI.resx">
+      <DependentUpon>frmSachGUI.vb</DependentUpon>
+>>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
