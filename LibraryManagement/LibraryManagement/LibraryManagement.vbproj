@@ -123,6 +123,7 @@
     </Compile>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -147,6 +148,8 @@
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -192,6 +195,7 @@
     </EmbeddedResource>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +209,8 @@
       <DependentUpon>frmSachGUI.vb</DependentUpon>
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     </EmbeddedResource>
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
     <EmbeddedResource Include="My Project\Resources.resx">

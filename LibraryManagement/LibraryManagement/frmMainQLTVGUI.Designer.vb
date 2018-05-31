@@ -33,6 +33,7 @@ Partial Class frmMain
         Me.QuảnLýLoạiSáchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuyĐịnhToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HệThốngTácGiảToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,6 +43,8 @@ Partial Class frmMain
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuanLySachToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         Me.MenuStrip1.SuspendLayout()
@@ -55,11 +58,15 @@ Partial Class frmMain
         Me.MenuStrip1.Name = "MenuStrip1"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.MenuStrip1.Size = New System.Drawing.Size(451, 28)
 =======
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(359, 24)
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+        Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
         Me.MenuStrip1.Size = New System.Drawing.Size(282, 28)
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
@@ -116,6 +123,7 @@ Partial Class frmMain
         '
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'FileToolStripMenuItem1
         '
         Me.FileToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuyĐịnhToolStripMenuItem})
@@ -162,16 +170,22 @@ Partial Class frmMain
         '
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(451, 253)
 =======
         Me.ClientSize = New System.Drawing.Size(359, 217)
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+        Me.ClientSize = New System.Drawing.Size(282, 253)
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
         Me.ClientSize = New System.Drawing.Size(282, 253)
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
@@ -199,6 +213,7 @@ Partial Class frmMain
     Friend WithEvents QuảnLýLoạiSáchToolStripMenuItem As ToolStripMenuItem
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Friend WithEvents FileToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents QuyĐịnhToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HệThốngTácGiảToolStripMenuItem As ToolStripMenuItem
@@ -208,6 +223,8 @@ Partial Class frmMain
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents QuanLySachToolStripMenuItem As ToolStripMenuItem
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 End Class
