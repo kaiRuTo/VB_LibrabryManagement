@@ -85,6 +85,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 98da15f... again
     <Compile Include="NhaXuatBanDAL.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhDAL.vb" />
@@ -92,12 +95,15 @@
     <Compile Include="SachDAL.vb" />
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     <Compile Include="TacGiaDAL.vb" />
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 342025a... them tg,nxb
+=======
+>>>>>>> parent of 98da15f... again
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

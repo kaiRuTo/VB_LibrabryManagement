@@ -119,6 +119,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 98da15f... again
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -143,12 +146,15 @@
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 342025a... them tg,nxb
+=======
+>>>>>>> parent of 98da15f... again
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -191,6 +197,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 98da15f... again
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
@@ -204,12 +213,15 @@
       <DependentUpon>frmSachGUI.vb</DependentUpon>
 >>>>>>> 988666cf67b8faffc6b2bf1a1817545712ec10f1
     </EmbeddedResource>
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 342025a... them tg,nxb
+=======
+>>>>>>> parent of 98da15f... again
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
