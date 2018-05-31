@@ -86,8 +86,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <Compile Include="NhaXuatBanDAL.vb" />
 <<<<<<< HEAD
     <Compile Include="QuyDinhDAL.vb" />
@@ -100,10 +103,13 @@
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 342025a... them tg,nxb
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

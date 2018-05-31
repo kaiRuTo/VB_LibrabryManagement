@@ -35,4 +35,22 @@ Public Class frmMain
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
+    Private Sub QuyĐịnhToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuyĐịnhToolStripMenuItem.Click
+        Dim frm As frmQuyDinh = New frmQuyDinh
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub ThêmTácGỉaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ThêmTácGỉaToolStripMenuItem.Click
+        Dim frm As frmTacGia = New frmTacGia
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub ThêmNXBToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ThêmNXBToolStripMenuItem.Click
+        Dim frm As frmNhaXuatBan = New frmNhaXuatBan
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
 End Class

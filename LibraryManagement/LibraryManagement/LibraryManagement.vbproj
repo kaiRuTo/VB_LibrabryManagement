@@ -97,6 +97,12 @@
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNhaXuatBan.Designer.vb">
+      <DependentUpon>frmNhaXuatBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaXuatBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQuanLyDocGia.Designer.vb">
       <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
     </Compile>
@@ -120,8 +126,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <Compile Include="frmQuyDinh.Designer.vb">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </Compile>
@@ -151,10 +160,13 @@
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 342025a... them tg,nxb
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="frmMainQLTVGUI.resx">
       <DependentUpon>frmMainQLTVGUI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaXuatBan.resx">
+      <DependentUpon>frmNhaXuatBan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyDocGia.resx">
       <DependentUpon>frmQuanLyDocGia.vb</DependentUpon>
     </EmbeddedResource>
@@ -198,8 +213,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <EmbeddedResource Include="frmQuyDinh.resx">
       <DependentUpon>frmQuyDinh.vb</DependentUpon>
     </EmbeddedResource>
@@ -218,10 +236,13 @@
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
 =======
 >>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 342025a... them tg,nxb
 =======
 >>>>>>> parent of 98da15f... again
+=======
+>>>>>>> parent of 1b65036... Revert "Add frmSachGUI (unfinished)"
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
