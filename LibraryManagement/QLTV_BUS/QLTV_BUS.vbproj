@@ -87,6 +87,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 98da15f... again
 =======
@@ -115,6 +116,8 @@
     <Compile Include="QuyDinhBUS.vb" />
     <Compile Include="TacGiaBUS.vb" />
 >>>>>>> 342025a... them tg,nxb
+=======
+>>>>>>> parent of 988666c... Add frmSachGUI (unfinished)
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
