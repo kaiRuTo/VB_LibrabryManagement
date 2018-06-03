@@ -17,4 +17,19 @@ Public Class TacGiaBUS
         Return tacGiaDAL.selectAll(listTacGia)
     End Function
 
+    Public Function insertSach(ms As String, mtg As String) As Result
+
+        Return tacGiaDAL.insertSach(ms, mtg)
+    End Function
+
+    Public Function deleteSach(ms As String, mtg As String) As Result
+
+        Return tacGiaDAL.deleteSach(ms, mtg)
+    End Function
+
+    Public Function loadTacGia(ms As String, ByRef mtg As String) As Result
+
+        Return tacGiaDAL.loadTacGia(ms, mtg)
+    End Function
+
 End Class

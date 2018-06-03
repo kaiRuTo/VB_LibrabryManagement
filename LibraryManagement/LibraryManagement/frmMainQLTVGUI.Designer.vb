@@ -114,7 +114,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
         Me.Text = "Quản Lý Thư Viện"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -3,12 +3,26 @@
     Private strTenSach As String
     Private strMaLoaiSach As String
     Private strMaNhaXuatBan As String
-    Private strNamXuatBan As String
+    Private dtNamXuatBan As DateTime
     Private dtNgayNhap As DateTime
     Private intTriGia As Integer
     Private intSoLuongSach As Integer
     Private intSoLuongConLai As Integer
 
+    Public Sub New()
+    End Sub
+
+    Public Sub New(masach As String, tensach As String, maloaisach As String, manhaxuatban As String, namxuatban As DateTime, ngaynhap As DateTime, trigia As Integer, soluongsach As Integer, soluongconlai As Integer)
+        Me.strMaSach = masach
+        Me.strTenSach = tensach
+        Me.strMaLoaiSach = maloaisach
+        Me.strMaNhaXuatBan = manhaxuatban
+        Me.dtNamXuatBan = namxuatban
+        Me.dtNgayNhap = ngaynhap
+        Me.intTriGia = trigia
+        Me.intSoLuongSach = soluongsach
+        Me.intSoLuongConLai = soluongconlai
+    End Sub
     Public Property maSach As String
         Get
             Return strMaSach
@@ -45,12 +59,12 @@
         End Set
     End Property
 
-    Public Property namXuatBan As String
+    Public Property namXuatBan As DateTime
         Get
-            Return strNamXuatBan
+            Return dtNamXuatBan
         End Get
-        Set(value As String)
-            strNamXuatBan = value
+        Set(value As DateTime)
+            dtNamXuatBan = value
         End Set
     End Property
 

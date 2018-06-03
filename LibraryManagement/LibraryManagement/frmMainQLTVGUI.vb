@@ -35,4 +35,10 @@ Public Class frmMain
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
+    Private Sub QuanLySachToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuanLySachToolStripMenuItem.Click
+        Dim frm As frmQuanLySachGUI = New frmQuanLySachGUI()
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
 End Class

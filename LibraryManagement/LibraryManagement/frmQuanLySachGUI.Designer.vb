@@ -28,17 +28,14 @@ Partial Class frmQuanLySachGUI
         Me.dgvQuanLySach = New System.Windows.Forms.DataGridView()
         Me.buttonThemSach = New System.Windows.Forms.Button()
         Me.groupBoxThongTinSach = New System.Windows.Forms.GroupBox()
-        Me.textBoxSoLuongConLai = New System.Windows.Forms.TextBox()
         Me.labelConLai = New System.Windows.Forms.Label()
-        Me.textBoxSoLuongSach = New System.Windows.Forms.TextBox()
         Me.labelSoLuongSach = New System.Windows.Forms.Label()
         Me.textBoxTriGia = New System.Windows.Forms.TextBox()
         Me.labelTriGia = New System.Windows.Forms.Label()
         Me.labelNgayNhap = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpNgayNhap = New System.Windows.Forms.DateTimePicker()
         Me.comboBoxNhaXuatBan = New System.Windows.Forms.ComboBox()
         Me.labelNhaXuatBan = New System.Windows.Forms.Label()
-        Me.textBoxTenTacGia = New System.Windows.Forms.TextBox()
         Me.labelTenTacGia = New System.Windows.Forms.Label()
         Me.comboBoxLoaiSach = New System.Windows.Forms.ComboBox()
         Me.labelLoaiSach = New System.Windows.Forms.Label()
@@ -46,8 +43,22 @@ Partial Class frmQuanLySachGUI
         Me.labelTenSach = New System.Windows.Forms.Label()
         Me.textBoxMaSach = New System.Windows.Forms.TextBox()
         Me.labelMaSach = New System.Windows.Forms.Label()
+        Me.buttonRefresh = New System.Windows.Forms.Button()
+        Me.buttonXoaHet = New System.Windows.Forms.Button()
+        Me.buttonCapNhap = New System.Windows.Forms.Button()
+        Me.buttonThoat = New System.Windows.Forms.Button()
+        Me.buttonTroLai = New System.Windows.Forms.Button()
+        Me.nudSoLuongConLai = New System.Windows.Forms.NumericUpDown()
+        Me.nudSoLuongSach = New System.Windows.Forms.NumericUpDown()
+        Me.buttonXoa = New System.Windows.Forms.Button()
+        Me.comboBoxTacGia = New System.Windows.Forms.ComboBox()
+        Me.labelNamXuanBan = New System.Windows.Forms.Label()
+        Me.dtpNamXuatBan = New System.Windows.Forms.DateTimePicker()
+        Me.buttonTimKiem = New System.Windows.Forms.Button()
         CType(Me.dgvQuanLySach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.groupBoxThongTinSach.SuspendLayout()
+        CType(Me.nudSoLuongConLai, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudSoLuongSach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'comboBoxTimKiem
@@ -71,7 +82,7 @@ Partial Class frmQuanLySachGUI
         '
         Me.textBoxTimKiem.Location = New System.Drawing.Point(157, 30)
         Me.textBoxTimKiem.Name = "textBoxTimKiem"
-        Me.textBoxTimKiem.Size = New System.Drawing.Size(375, 20)
+        Me.textBoxTimKiem.Size = New System.Drawing.Size(294, 20)
         Me.textBoxTimKiem.TabIndex = 2
         '
         'dgvQuanLySach
@@ -79,12 +90,12 @@ Partial Class frmQuanLySachGUI
         Me.dgvQuanLySach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvQuanLySach.Location = New System.Drawing.Point(12, 57)
         Me.dgvQuanLySach.Name = "dgvQuanLySach"
-        Me.dgvQuanLySach.Size = New System.Drawing.Size(520, 375)
+        Me.dgvQuanLySach.Size = New System.Drawing.Size(520, 397)
         Me.dgvQuanLySach.TabIndex = 3
         '
         'buttonThemSach
         '
-        Me.buttonThemSach.Location = New System.Drawing.Point(799, 23)
+        Me.buttonThemSach.Location = New System.Drawing.Point(799, 28)
         Me.buttonThemSach.Name = "buttonThemSach"
         Me.buttonThemSach.Size = New System.Drawing.Size(75, 23)
         Me.buttonThemSach.TabIndex = 4
@@ -93,17 +104,19 @@ Partial Class frmQuanLySachGUI
         '
         'groupBoxThongTinSach
         '
-        Me.groupBoxThongTinSach.Controls.Add(Me.textBoxSoLuongConLai)
+        Me.groupBoxThongTinSach.Controls.Add(Me.labelNamXuanBan)
+        Me.groupBoxThongTinSach.Controls.Add(Me.dtpNamXuatBan)
+        Me.groupBoxThongTinSach.Controls.Add(Me.comboBoxTacGia)
+        Me.groupBoxThongTinSach.Controls.Add(Me.nudSoLuongConLai)
+        Me.groupBoxThongTinSach.Controls.Add(Me.nudSoLuongSach)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelConLai)
-        Me.groupBoxThongTinSach.Controls.Add(Me.textBoxSoLuongSach)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelSoLuongSach)
         Me.groupBoxThongTinSach.Controls.Add(Me.textBoxTriGia)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelTriGia)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelNgayNhap)
-        Me.groupBoxThongTinSach.Controls.Add(Me.DateTimePicker1)
+        Me.groupBoxThongTinSach.Controls.Add(Me.dtpNgayNhap)
         Me.groupBoxThongTinSach.Controls.Add(Me.comboBoxNhaXuatBan)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelNhaXuatBan)
-        Me.groupBoxThongTinSach.Controls.Add(Me.textBoxTenTacGia)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelTenTacGia)
         Me.groupBoxThongTinSach.Controls.Add(Me.comboBoxLoaiSach)
         Me.groupBoxThongTinSach.Controls.Add(Me.labelLoaiSach)
@@ -113,38 +126,24 @@ Partial Class frmQuanLySachGUI
         Me.groupBoxThongTinSach.Controls.Add(Me.labelMaSach)
         Me.groupBoxThongTinSach.Location = New System.Drawing.Point(560, 57)
         Me.groupBoxThongTinSach.Name = "groupBoxThongTinSach"
-        Me.groupBoxThongTinSach.Size = New System.Drawing.Size(314, 375)
+        Me.groupBoxThongTinSach.Size = New System.Drawing.Size(314, 397)
         Me.groupBoxThongTinSach.TabIndex = 5
         Me.groupBoxThongTinSach.TabStop = False
         Me.groupBoxThongTinSach.Text = "Thông tin sách"
         '
-        'textBoxSoLuongConLai
-        '
-        Me.textBoxSoLuongConLai.Location = New System.Drawing.Point(91, 323)
-        Me.textBoxSoLuongConLai.Name = "textBoxSoLuongConLai"
-        Me.textBoxSoLuongConLai.Size = New System.Drawing.Size(173, 20)
-        Me.textBoxSoLuongConLai.TabIndex = 18
-        '
         'labelConLai
         '
         Me.labelConLai.AutoSize = True
-        Me.labelConLai.Location = New System.Drawing.Point(15, 324)
+        Me.labelConLai.Location = New System.Drawing.Point(17, 361)
         Me.labelConLai.Name = "labelConLai"
         Me.labelConLai.Size = New System.Drawing.Size(43, 13)
         Me.labelConLai.TabIndex = 17
         Me.labelConLai.Text = "Còn Lại"
         '
-        'textBoxSoLuongSach
-        '
-        Me.textBoxSoLuongSach.Location = New System.Drawing.Point(92, 286)
-        Me.textBoxSoLuongSach.Name = "textBoxSoLuongSach"
-        Me.textBoxSoLuongSach.Size = New System.Drawing.Size(173, 20)
-        Me.textBoxSoLuongSach.TabIndex = 16
-        '
         'labelSoLuongSach
         '
         Me.labelSoLuongSach.AutoSize = True
-        Me.labelSoLuongSach.Location = New System.Drawing.Point(16, 287)
+        Me.labelSoLuongSach.Location = New System.Drawing.Point(17, 324)
         Me.labelSoLuongSach.Name = "labelSoLuongSach"
         Me.labelSoLuongSach.Size = New System.Drawing.Size(49, 13)
         Me.labelSoLuongSach.TabIndex = 15
@@ -152,7 +151,7 @@ Partial Class frmQuanLySachGUI
         '
         'textBoxTriGia
         '
-        Me.textBoxTriGia.Location = New System.Drawing.Point(93, 249)
+        Me.textBoxTriGia.Location = New System.Drawing.Point(101, 280)
         Me.textBoxTriGia.Name = "textBoxTriGia"
         Me.textBoxTriGia.Size = New System.Drawing.Size(173, 20)
         Me.textBoxTriGia.TabIndex = 14
@@ -160,7 +159,7 @@ Partial Class frmQuanLySachGUI
         'labelTriGia
         '
         Me.labelTriGia.AutoSize = True
-        Me.labelTriGia.Location = New System.Drawing.Point(17, 250)
+        Me.labelTriGia.Location = New System.Drawing.Point(17, 287)
         Me.labelTriGia.Name = "labelTriGia"
         Me.labelTriGia.Size = New System.Drawing.Size(36, 13)
         Me.labelTriGia.TabIndex = 13
@@ -169,23 +168,23 @@ Partial Class frmQuanLySachGUI
         'labelNgayNhap
         '
         Me.labelNgayNhap.AutoSize = True
-        Me.labelNgayNhap.Location = New System.Drawing.Point(16, 213)
+        Me.labelNgayNhap.Location = New System.Drawing.Point(17, 250)
         Me.labelNgayNhap.Name = "labelNgayNhap"
         Me.labelNgayNhap.Size = New System.Drawing.Size(59, 13)
         Me.labelNgayNhap.TabIndex = 12
         Me.labelNgayNhap.Text = "Ngày nhập"
         '
-        'DateTimePicker1
+        'dtpNgayNhap
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(93, 212)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 11
+        Me.dtpNgayNhap.Location = New System.Drawing.Point(101, 244)
+        Me.dtpNgayNhap.Name = "dtpNgayNhap"
+        Me.dtpNgayNhap.Size = New System.Drawing.Size(200, 20)
+        Me.dtpNgayNhap.TabIndex = 11
         '
         'comboBoxNhaXuatBan
         '
         Me.comboBoxNhaXuatBan.FormattingEnabled = True
-        Me.comboBoxNhaXuatBan.Location = New System.Drawing.Point(92, 174)
+        Me.comboBoxNhaXuatBan.Location = New System.Drawing.Point(101, 171)
         Me.comboBoxNhaXuatBan.Name = "comboBoxNhaXuatBan"
         Me.comboBoxNhaXuatBan.Size = New System.Drawing.Size(133, 21)
         Me.comboBoxNhaXuatBan.TabIndex = 10
@@ -193,18 +192,11 @@ Partial Class frmQuanLySachGUI
         'labelNhaXuatBan
         '
         Me.labelNhaXuatBan.AutoSize = True
-        Me.labelNhaXuatBan.Location = New System.Drawing.Point(16, 176)
+        Me.labelNhaXuatBan.Location = New System.Drawing.Point(17, 176)
         Me.labelNhaXuatBan.Name = "labelNhaXuatBan"
         Me.labelNhaXuatBan.Size = New System.Drawing.Size(71, 13)
         Me.labelNhaXuatBan.TabIndex = 9
         Me.labelNhaXuatBan.Text = "Nhà xuất bản"
-        '
-        'textBoxTenTacGia
-        '
-        Me.textBoxTenTacGia.Location = New System.Drawing.Point(93, 137)
-        Me.textBoxTenTacGia.Name = "textBoxTenTacGia"
-        Me.textBoxTenTacGia.Size = New System.Drawing.Size(174, 20)
-        Me.textBoxTenTacGia.TabIndex = 8
         '
         'labelTenTacGia
         '
@@ -218,7 +210,7 @@ Partial Class frmQuanLySachGUI
         'comboBoxLoaiSach
         '
         Me.comboBoxLoaiSach.FormattingEnabled = True
-        Me.comboBoxLoaiSach.Location = New System.Drawing.Point(92, 99)
+        Me.comboBoxLoaiSach.Location = New System.Drawing.Point(101, 97)
         Me.comboBoxLoaiSach.Name = "comboBoxLoaiSach"
         Me.comboBoxLoaiSach.Size = New System.Drawing.Size(133, 21)
         Me.comboBoxLoaiSach.TabIndex = 6
@@ -226,7 +218,7 @@ Partial Class frmQuanLySachGUI
         'labelLoaiSach
         '
         Me.labelLoaiSach.AutoSize = True
-        Me.labelLoaiSach.Location = New System.Drawing.Point(16, 102)
+        Me.labelLoaiSach.Location = New System.Drawing.Point(17, 102)
         Me.labelLoaiSach.Name = "labelLoaiSach"
         Me.labelLoaiSach.Size = New System.Drawing.Size(53, 13)
         Me.labelLoaiSach.TabIndex = 4
@@ -234,7 +226,7 @@ Partial Class frmQuanLySachGUI
         '
         'textBoxTenSach
         '
-        Me.textBoxTenSach.Location = New System.Drawing.Point(92, 62)
+        Me.textBoxTenSach.Location = New System.Drawing.Point(101, 61)
         Me.textBoxTenSach.Name = "textBoxTenSach"
         Me.textBoxTenSach.Size = New System.Drawing.Size(174, 20)
         Me.textBoxTenSach.TabIndex = 3
@@ -242,7 +234,7 @@ Partial Class frmQuanLySachGUI
         'labelTenSach
         '
         Me.labelTenSach.AutoSize = True
-        Me.labelTenSach.Location = New System.Drawing.Point(16, 65)
+        Me.labelTenSach.Location = New System.Drawing.Point(17, 65)
         Me.labelTenSach.Name = "labelTenSach"
         Me.labelTenSach.Size = New System.Drawing.Size(52, 13)
         Me.labelTenSach.TabIndex = 2
@@ -250,7 +242,7 @@ Partial Class frmQuanLySachGUI
         '
         'textBoxMaSach
         '
-        Me.textBoxMaSach.Location = New System.Drawing.Point(92, 25)
+        Me.textBoxMaSach.Location = New System.Drawing.Point(101, 25)
         Me.textBoxMaSach.Name = "textBoxMaSach"
         Me.textBoxMaSach.ReadOnly = True
         Me.textBoxMaSach.Size = New System.Drawing.Size(133, 20)
@@ -259,17 +251,125 @@ Partial Class frmQuanLySachGUI
         'labelMaSach
         '
         Me.labelMaSach.AutoSize = True
-        Me.labelMaSach.Location = New System.Drawing.Point(16, 28)
+        Me.labelMaSach.Location = New System.Drawing.Point(17, 28)
         Me.labelMaSach.Name = "labelMaSach"
         Me.labelMaSach.Size = New System.Drawing.Size(48, 13)
         Me.labelMaSach.TabIndex = 0
         Me.labelMaSach.Text = "Mã sách"
         '
+        'buttonRefresh
+        '
+        Me.buttonRefresh.Location = New System.Drawing.Point(223, 460)
+        Me.buttonRefresh.Name = "buttonRefresh"
+        Me.buttonRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.buttonRefresh.TabIndex = 6
+        Me.buttonRefresh.Text = "Refresh"
+        Me.buttonRefresh.UseVisualStyleBackColor = True
+        '
+        'buttonXoaHet
+        '
+        Me.buttonXoaHet.Location = New System.Drawing.Point(457, 459)
+        Me.buttonXoaHet.Name = "buttonXoaHet"
+        Me.buttonXoaHet.Size = New System.Drawing.Size(75, 23)
+        Me.buttonXoaHet.TabIndex = 7
+        Me.buttonXoaHet.Text = "Xóa hết"
+        Me.buttonXoaHet.UseVisualStyleBackColor = True
+        '
+        'buttonCapNhap
+        '
+        Me.buttonCapNhap.Location = New System.Drawing.Point(679, 460)
+        Me.buttonCapNhap.Name = "buttonCapNhap"
+        Me.buttonCapNhap.Size = New System.Drawing.Size(75, 23)
+        Me.buttonCapNhap.TabIndex = 8
+        Me.buttonCapNhap.Text = "Cập nhập"
+        Me.buttonCapNhap.UseVisualStyleBackColor = True
+        '
+        'buttonThoat
+        '
+        Me.buttonThoat.Location = New System.Drawing.Point(798, 460)
+        Me.buttonThoat.Name = "buttonThoat"
+        Me.buttonThoat.Size = New System.Drawing.Size(75, 23)
+        Me.buttonThoat.TabIndex = 9
+        Me.buttonThoat.Text = "Thoát"
+        Me.buttonThoat.UseVisualStyleBackColor = True
+        '
+        'buttonTroLai
+        '
+        Me.buttonTroLai.Location = New System.Drawing.Point(12, 460)
+        Me.buttonTroLai.Name = "buttonTroLai"
+        Me.buttonTroLai.Size = New System.Drawing.Size(75, 23)
+        Me.buttonTroLai.TabIndex = 10
+        Me.buttonTroLai.Text = "Trở lại"
+        Me.buttonTroLai.UseVisualStyleBackColor = True
+        '
+        'nudSoLuongConLai
+        '
+        Me.nudSoLuongConLai.Location = New System.Drawing.Point(101, 352)
+        Me.nudSoLuongConLai.Name = "nudSoLuongConLai"
+        Me.nudSoLuongConLai.Size = New System.Drawing.Size(120, 20)
+        Me.nudSoLuongConLai.TabIndex = 42
+        '
+        'nudSoLuongSach
+        '
+        Me.nudSoLuongSach.Location = New System.Drawing.Point(101, 316)
+        Me.nudSoLuongSach.Name = "nudSoLuongSach"
+        Me.nudSoLuongSach.Size = New System.Drawing.Size(120, 20)
+        Me.nudSoLuongSach.TabIndex = 41
+        '
+        'buttonXoa
+        '
+        Me.buttonXoa.Location = New System.Drawing.Point(560, 459)
+        Me.buttonXoa.Name = "buttonXoa"
+        Me.buttonXoa.Size = New System.Drawing.Size(75, 23)
+        Me.buttonXoa.TabIndex = 11
+        Me.buttonXoa.Text = "Xóa"
+        Me.buttonXoa.UseVisualStyleBackColor = True
+        '
+        'comboBoxTacGia
+        '
+        Me.comboBoxTacGia.FormattingEnabled = True
+        Me.comboBoxTacGia.Location = New System.Drawing.Point(101, 134)
+        Me.comboBoxTacGia.Name = "comboBoxTacGia"
+        Me.comboBoxTacGia.Size = New System.Drawing.Size(135, 21)
+        Me.comboBoxTacGia.TabIndex = 43
+        '
+        'labelNamXuanBan
+        '
+        Me.labelNamXuanBan.AutoSize = True
+        Me.labelNamXuanBan.Location = New System.Drawing.Point(17, 213)
+        Me.labelNamXuanBan.Name = "labelNamXuanBan"
+        Me.labelNamXuanBan.Size = New System.Drawing.Size(73, 13)
+        Me.labelNamXuanBan.TabIndex = 45
+        Me.labelNamXuanBan.Text = "Năm xuất bản"
+        '
+        'dtpNamXuatBan
+        '
+        Me.dtpNamXuatBan.Location = New System.Drawing.Point(101, 208)
+        Me.dtpNamXuatBan.Name = "dtpNamXuatBan"
+        Me.dtpNamXuatBan.Size = New System.Drawing.Size(200, 20)
+        Me.dtpNamXuatBan.TabIndex = 44
+        '
+        'buttonTimKiem
+        '
+        Me.buttonTimKiem.Location = New System.Drawing.Point(457, 28)
+        Me.buttonTimKiem.Name = "buttonTimKiem"
+        Me.buttonTimKiem.Size = New System.Drawing.Size(75, 23)
+        Me.buttonTimKiem.TabIndex = 12
+        Me.buttonTimKiem.Text = "Tìm Kiếm"
+        Me.buttonTimKiem.UseVisualStyleBackColor = True
+        '
         'frmQuanLySachGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(886, 485)
+        Me.ClientSize = New System.Drawing.Size(881, 506)
+        Me.Controls.Add(Me.buttonTimKiem)
+        Me.Controls.Add(Me.buttonXoa)
+        Me.Controls.Add(Me.buttonTroLai)
+        Me.Controls.Add(Me.buttonThoat)
+        Me.Controls.Add(Me.buttonCapNhap)
+        Me.Controls.Add(Me.buttonXoaHet)
+        Me.Controls.Add(Me.buttonRefresh)
         Me.Controls.Add(Me.groupBoxThongTinSach)
         Me.Controls.Add(Me.buttonThemSach)
         Me.Controls.Add(Me.dgvQuanLySach)
@@ -281,6 +381,8 @@ Partial Class frmQuanLySachGUI
         CType(Me.dgvQuanLySach, System.ComponentModel.ISupportInitialize).EndInit()
         Me.groupBoxThongTinSach.ResumeLayout(False)
         Me.groupBoxThongTinSach.PerformLayout()
+        CType(Me.nudSoLuongConLai, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudSoLuongSach, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -298,16 +400,25 @@ Partial Class frmQuanLySachGUI
     Friend WithEvents labelTenSach As Label
     Friend WithEvents comboBoxLoaiSach As ComboBox
     Friend WithEvents labelLoaiSach As Label
-    Friend WithEvents textBoxTenTacGia As TextBox
     Friend WithEvents labelTenTacGia As Label
     Friend WithEvents comboBoxNhaXuatBan As ComboBox
     Friend WithEvents labelNhaXuatBan As Label
     Friend WithEvents labelNgayNhap As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtpNgayNhap As DateTimePicker
     Friend WithEvents textBoxTriGia As TextBox
     Friend WithEvents labelTriGia As Label
-    Friend WithEvents textBoxSoLuongConLai As TextBox
     Friend WithEvents labelConLai As Label
-    Friend WithEvents textBoxSoLuongSach As TextBox
     Friend WithEvents labelSoLuongSach As Label
+    Friend WithEvents buttonRefresh As Button
+    Friend WithEvents buttonXoaHet As Button
+    Friend WithEvents buttonCapNhap As Button
+    Friend WithEvents buttonThoat As Button
+    Friend WithEvents buttonTroLai As Button
+    Friend WithEvents nudSoLuongConLai As NumericUpDown
+    Friend WithEvents nudSoLuongSach As NumericUpDown
+    Friend WithEvents buttonXoa As Button
+    Friend WithEvents comboBoxTacGia As ComboBox
+    Friend WithEvents labelNamXuanBan As Label
+    Friend WithEvents dtpNamXuatBan As DateTimePicker
+    Friend WithEvents buttonTimKiem As Button
 End Class
