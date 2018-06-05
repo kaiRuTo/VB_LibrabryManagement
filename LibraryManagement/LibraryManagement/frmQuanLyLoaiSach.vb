@@ -50,7 +50,7 @@ Public Class frmQuanLyLoaiSach
                 ls = New LoaiSachDTO()
 
                 '1. Mapping data from GUI control
-                ls.MaLoai = Convert.ToInt32(txtMaLoai.Text)
+                ls.MaLoai = txtMaLoai.Text
                 ls.TenLoai = txtTenLoai.Text
 
                 '2. Business .....

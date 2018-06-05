@@ -31,4 +31,11 @@ Public Class SachBUS
 
         Return sachDAL.load(masach, sach)
     End Function
+
+    Public Function selectAll(ByRef listSach As List(Of SachDTO)) As Result
+
+        Return sachDAL.selectAll(listSach)
+    End Function
+
+
 End Class

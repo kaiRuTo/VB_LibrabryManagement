@@ -13,6 +13,8 @@ Public Class frmQuanLySachGUI
     Private Sub frmQuanLySachGUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         sachBUS = New SachBUS()
         loaiSachBUS = New LoaiSachBUS()
+        tacGiaBUS = New TacGiaBUS()
+        nhaxuatbanBUS = New NhaXuatBanBUS()
         Dim result As Result
 
         'Lấy danh sách loại sách
@@ -25,11 +27,12 @@ Public Class frmQuanLySachGUI
         End If
 
         comboBoxLoaiSach.DataSource = New BindingSource(listLoaiSach, String.Empty)
-        comboBoxLoaiSach.DisplayMember = "tenLoaiSach"
-        comboBoxLoaiSach.ValueMember = "maLoaiSach"
+        comboBoxLoaiSach.DisplayMember = "tenLoai"
+        comboBoxLoaiSach.ValueMember = "maLoai"
 
         'Lấy danh sách nhà xuất bản
         Dim listNhaXuatBan As New List(Of NhaXuatBanDTO)
+
         result = nhaxuatbanBUS.selectAll(listNhaXuatBan)
         If (result.FlagResult = False) Then
             MessageBox.Show("Lấy danh sách nhà xuất bản không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -50,9 +53,10 @@ Public Class frmQuanLySachGUI
             Return
         End If
 
-        comboBoxTacGia.DataSource = New BindingSource(listNhaXuatBan, String.Empty)
-        comboBoxTacGia.DisplayMember = "tenTacGia"
+        comboBoxTacGia.DataSource = New BindingSource(listTacGia, String.Empty)
         comboBoxTacGia.ValueMember = "maTacGia"
+        comboBoxTacGia.DisplayMember = "tenTacGia"
+
 
         Dim list_cbTimKiem As New List(Of String)
         list_cbTimKiem.Add("Mã sách")
@@ -65,7 +69,7 @@ Public Class frmQuanLySachGUI
 
         comboBoxTimKiem.DataSource = New BindingSource(list_cbTimKiem, String.Empty)
 
-        'loadDgvQuanLySach()
+        loadDqvQuanLySach()
 
     End Sub
 
@@ -186,7 +190,80 @@ Public Class frmQuanLySachGUI
         'loadDgvQuanLySach()
     End Sub
 
-    Private Function loadDqvQuanLySach() As Boolean
+    Private Function loadDqvQuanLySach()
+        Dim listSach As New List(Of SachDTO)
+        Dim result As Result
+        result = sachBUS.selectAll(listSach)
+        If (result.FlagResult = False) Then
+            MessageBox.Show("Lấy danh sách sách không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            System.Console.WriteLine(result.SystemMessage)
+            Return False
+        End If
+
+        dgvQuanLySach.SuspendLayout()
+        dgvQuanLySach.Columns.Clear()
+        dgvQuanLySach.DataSource = Nothing
+
+        dgvQuanLySach.AutoGenerateColumns = False
+        dgvQuanLySach.AllowUserToAddRows = False
+        dgvQuanLySach.DataSource = listSach
+
+        Dim clMaSach = New DataGridViewTextBoxColumn()
+        clMaSach.Name = "masach"
+        clMaSach.HeaderText = "Mã Sách"
+        clMaSach.DataPropertyName = "masach"
+        dgvQuanLySach.Columns.Add(clMaSach)
+
+
+        Dim clTenSach = New DataGridViewTextBoxColumn()
+        clTenSach.Name = "tensach"
+        clTenSach.HeaderText = "Tên Sách"
+        clTenSach.DataPropertyName = "tensach"
+        dgvQuanLySach.Columns.Add(clTenSach)
+
+        Dim clMaLoaiSach = New DataGridViewTextBoxColumn()
+        clMaLoaiSach.Name = "maLoaisach"
+        clMaLoaiSach.HeaderText = "Mã Loại sách"
+        clMaLoaiSach.DataPropertyName = "maloaisach"
+        dgvQuanLySach.Columns.Add(clMaLoaiSach)
+
+        Dim clMaNhaXuatBan = New DataGridViewTextBoxColumn()
+        clMaNhaXuatBan.Name = "manhaxuatban"
+        clMaNhaXuatBan.HeaderText = "Mã Nhà Xuất Bản"
+        clMaNhaXuatBan.DataPropertyName = "manhaxuatban"
+        dgvQuanLySach.Columns.Add(clMaNhaXuatBan)
+
+        Dim clNgayNhap = New DataGridViewTextBoxColumn()
+        clNgayNhap.Name = "ngaynhap"
+        clNgayNhap.HeaderText = "Ngày Nhập Sách"
+        clNgayNhap.DataPropertyName = "ngaynhap"
+        dgvQuanLySach.Columns.Add(clNgayNhap)
+
+        Dim clNamXuatBan = New DataGridViewTextBoxColumn()
+        clNamXuatBan.Name = "namxuatban"
+        clNamXuatBan.HeaderText = "Năm Xuất Bản"
+        clNamXuatBan.DataPropertyName = "namXuatBan"
+        dgvQuanLySach.Columns.Add(clNamXuatBan)
+
+        Dim clTriGia = New DataGridViewTextBoxColumn()
+        clTriGia.Name = "trigia"
+        clTriGia.HeaderText = "Trị giá"
+        clTriGia.DataPropertyName = "trigia"
+        dgvQuanLySach.Columns.Add(clTriGia)
+
+        Dim clSoLuongSach = New DataGridViewTextBoxColumn()
+        clSoLuongSach.Name = "soluongsach"
+        clSoLuongSach.HeaderText = "Số Lượng Sách"
+        clSoLuongSach.DataPropertyName = "soluongsach"
+        dgvQuanLySach.Columns.Add(clSoLuongSach)
+
+        Dim clSoLuongConLai = New DataGridViewTextBoxColumn()
+        clSoLuongConLai.Name = "soluongconlai"
+        clSoLuongConLai.HeaderText = "Số Lượng còn lại"
+        clSoLuongConLai.DataPropertyName = "soluongconlai"
+        dgvQuanLySach.Columns.Add(clSoLuongConLai)
+
+
 
 
         Return True

@@ -81,7 +81,7 @@ Public Class SachDAL
     Public Function insert(s As SachDTO) As Result
 
         Dim query As String = String.Empty
-        query &= "INSERT INTO [tblSach] ([masach], [tensach],[maloaisach] ,[manhaxuatban], [namxuatban] [ngaynhap],[trigia],[soluongsach], [soluongconlai])"
+        query &= "INSERT INTO [tblSach] ([masach], [tensach],[maloaisach] ,[manhaxuatban], [namxuatban], [ngaynhap],[trigia],[soluongsach], [soluongconlai])"
         query &= "VALUES (@masach, @tensach, @maloaisach, @manhaxuatban, @namxuatban, @ngaynhap, @trigia, @soluongsach, @soluongconlai)"
 
         ''get MSdg
@@ -108,6 +108,7 @@ Public Class SachDAL
                 Try
                     conn.Open()
                     comm.ExecuteNonQuery()
+                    Console.WriteLine("0")
                 Catch ex As Exception
                     conn.Close()
                     System.Console.WriteLine(ex.StackTrace)
@@ -167,6 +168,41 @@ Public Class SachDAL
                         listSach.Clear()
                         While reader.Read()
                             listSach.Add(New SachDTO(reader("masach"), reader("tensach"), reader("maloaisach"), reader("manhaxuatban"), reader("namxuatban"), reader("ngaynhap"), reader("trigia"), reader("soluongsach"), reader("soluongconlai")))
+
+                        End While
+                    End If
+
+                Catch ex As Exception
+                    conn.Close()
+                    System.Console.WriteLine(ex.StackTrace)
+                    Return New Result(False, "Lấy tất cả Sách không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True)
+    End Function
+
+    Public Function selectAllWithTacGia(ByRef listSAch As List(Of SachDTO)) As Result
+        Dim query As String = String.Empty
+        query &= "SELECT [masach], [tensach], [maloaisach], [manhaxuatban], [namxuatban], [ngaynhap], [trigia], [soluongsach], [soluongconlai]"
+        query &= "FROM [tblSach] "
+
+
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                End With
+                Try
+                    conn.Open()
+                    Dim reader As SqlDataReader
+                    reader = comm.ExecuteReader()
+                    If reader.HasRows = True Then
+                        listSAch.Clear()
+                        While reader.Read()
+                            listSAch.Add(New SachDTO(reader("masach"), reader("tensach"), reader("maloaisach"), reader("manhaxuatban"), reader("namxuatban"), reader("ngaynhap"), reader("trigia"), reader("soluongsach"), reader("soluongconlai")))
 
                         End While
                     End If

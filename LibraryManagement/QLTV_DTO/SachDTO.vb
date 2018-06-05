@@ -2,6 +2,7 @@
     Private strMaSach As String
     Private strTenSach As String
     Private strMaLoaiSach As String
+    Private strMaTacGia As String
     Private strMaNhaXuatBan As String
     Private dtNamXuatBan As DateTime
     Private dtNgayNhap As DateTime
@@ -101,6 +102,15 @@
         End Get
         Set(value As Integer)
             intSoLuongConLai = value
+        End Set
+    End Property
+
+    Public Property maTacGia As String
+        Get
+            Return strMaTacGia
+        End Get
+        Set(value As String)
+            strMaTacGia = value
         End Set
     End Property
 End Class

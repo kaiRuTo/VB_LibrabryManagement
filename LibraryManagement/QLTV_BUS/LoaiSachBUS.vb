@@ -57,7 +57,7 @@ Public Class LoaiSachBUS
         '2. insert to DB
         Return lsDAL.selectALL(listLoais)
     End Function
-    Public Function getNextID(ByRef nextID As Integer) As Result
+    Public Function getNextID(ByRef nextID As String) As Result
         Return lsDAL.getNextID(nextID)
     End Function
 End Class

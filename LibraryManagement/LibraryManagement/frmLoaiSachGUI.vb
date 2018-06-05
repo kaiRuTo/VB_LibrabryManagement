@@ -8,7 +8,7 @@ Public Class frmLoaiSachGUI
         ls = New LoaiSachDTO()
 
         '1. Mapping data from GUI control
-        ls.MaLoai = Convert.ToInt32(txtMaLoai.Text)
+        ls.MaLoai = txtMaLoai.Text
         ls.TenLoai = txtTenLoai.Text
 
         '2. Business .....
@@ -51,7 +51,7 @@ Public Class frmLoaiSachGUI
         ls = New LoaiSachDTO()
 
         '1. Mapping data from GUI control
-        ls.MaLoai = Convert.ToInt32(txtMaLoai.Text)
+        ls.MaLoai = txtMaLoai.Text
         ls.TenLoai = txtTenLoai.Text
 
         '2. Business .....
@@ -82,7 +82,7 @@ Public Class frmLoaiSachGUI
         lsBUS = New LoaiSachBUS()
 
         ' Get Next ID
-        Dim nextID As Integer
+        Dim nextID As String
         Dim result As Result
         result = lsBUS.getNextID(nextID)
         If (result.FlagResult = True) Then

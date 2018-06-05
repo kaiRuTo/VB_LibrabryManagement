@@ -45,8 +45,8 @@ Public Class frmSachGUI
         End If
 
         comboBoxLoaiSach.DataSource = New BindingSource(listLoaiSach, String.Empty)
-        comboBoxLoaiSach.DisplayMember = "tenLoaiSach"
-        comboBoxLoaiSach.ValueMember = "maLoaiSach"
+        comboBoxLoaiSach.DisplayMember = "tenLoai"
+        comboBoxLoaiSach.ValueMember = "maLoai"
 
         'Lấy danh sách nhà xuất bản
         Dim listNhaXuatBan As New List(Of NhaXuatBanDTO)
@@ -70,7 +70,7 @@ Public Class frmSachGUI
             Return
         End If
 
-        comboBoxTacGia.DataSource = New BindingSource(listNhaXuatBan, String.Empty)
+        comboBoxTacGia.DataSource = New BindingSource(listTacGia, String.Empty)
         comboBoxTacGia.DisplayMember = "tenTacGia"
         comboBoxTacGia.ValueMember = "maTacGia"
 
@@ -83,18 +83,18 @@ Public Class frmSachGUI
 
         sachDTO.maSach = textBoxMaSach.Text
         sachDTO.tenSach = textBoxTenSach.Text
-        sachDTO.maLoaiSach = comboBoxLoaiSach.ValueMember
-        sachDTO.maNhaXuatBan = comboBoxNhaXuatBan.ValueMember
+        sachDTO.maLoaiSach = comboBoxLoaiSach.SelectedValue
+        sachDTO.maNhaXuatBan = comboBoxNhaXuatBan.SelectedValue
         sachDTO.namXuatBan = dtpNamXuatBan.Value
         sachDTO.ngayNhap = dtpNgayNhap.Value
-        sachDTO.triGia = textBoxTriGia.Text
+        sachDTO.triGia = Integer.Parse(textBoxTriGia.Text)
         sachDTO.soLuongSach = nudSoLuongSach.Value
         sachDTO.soLuongConLai = nudSoLuongConLai.Value
 
         Dim resultInsertSach As New Result()
         resultInsertSach = sachBUS.insert(sachDTO)
         Dim resultInsertSachTacGia As New Result()
-        resultInsertSachTacGia = tacGiaBUS.insertSach(textBoxMaSach.Text, comboBoxTacGia.ValueMember)
+        resultInsertSachTacGia = tacGiaBUS.insertSach(textBoxMaSach.Text, comboBoxTacGia.SelectedValue)
         Dim caseResult As Integer
 
         If (resultInsertSach.FlagResult) Then
@@ -143,18 +143,18 @@ Public Class frmSachGUI
 
         sachDTO.maSach = textBoxMaSach.Text
         sachDTO.tenSach = textBoxTenSach.Text
-        sachDTO.maLoaiSach = comboBoxLoaiSach.ValueMember
-        sachDTO.maNhaXuatBan = comboBoxNhaXuatBan.ValueMember
+        sachDTO.maLoaiSach = comboBoxLoaiSach.SelectedValue
+        sachDTO.maNhaXuatBan = comboBoxNhaXuatBan.SelectedValue
         sachDTO.namXuatBan = dtpNamXuatBan.Value
         sachDTO.ngayNhap = dtpNgayNhap.Value
-        sachDTO.triGia = textBoxTriGia.Text
+        sachDTO.triGia = Integer.Parse(textBoxTriGia.Text)
         sachDTO.soLuongSach = nudSoLuongSach.Value
         sachDTO.soLuongConLai = nudSoLuongConLai.Value
 
         Dim resultInsertSach As New Result()
         resultInsertSach = sachBUS.insert(sachDTO)
         Dim resultInsertSachTacGia As New Result()
-        resultInsertSachTacGia = tacGiaBUS.insertSach(textBoxMaSach.Text, comboBoxTacGia.ValueMember)
+        resultInsertSachTacGia = tacGiaBUS.insertSach(textBoxMaSach.Text, comboBoxTacGia.SelectedValue)
         Dim caseResult As Integer
 
         If (resultInsertSach.FlagResult) Then

@@ -49,7 +49,7 @@ Public Class LoaiSachDAL
         End Using
         Return id ' thanh cong
     End Function
-    Public Function getNextID(ByRef nextID As Integer) As Result
+    Public Function getNextID(ByRef nextID As String) As Result
 
         Dim query As String = String.Empty
         query &= "Select TOP 1 [maloaisach] "
@@ -67,19 +67,24 @@ Public Class LoaiSachDAL
                     conn.Open()
                     Dim reader As SqlDataReader
                     reader = comm.ExecuteReader()
-                    Dim idOnDB As Integer
+                    Dim idOnDB As String
                     idOnDB = Nothing
                     If reader.HasRows = True Then
                         While reader.Read()
                             idOnDB = reader("maloaisach")
                         End While
+                    Else
+                        nextID = "LS1"
+                        Return New Result(True)
                     End If
                     ' new ID = current ID + 1
-                    nextID = idOnDB + 1
+                    'nextID = idOnDB + 1
+                    idOnDB = (Integer.Parse(idOnDB.Remove(0, 2)) + 1).ToString()
+                    nextID = "LS" + idOnDB
                 Catch ex As Exception
                     conn.Close()
                     ' them that bai!!!
-                    nextID = 1
+                    nextID = "LS1"
                     Return New Result(False, "Lấy ID kế tiếp của loại sách không thành công", ex.StackTrace)
                 End Try
             End Using
